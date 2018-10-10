@@ -1,0 +1,2084 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AboutAssessmentLinkEnglish" xml:space="preserve">
+    <value>Assessment Process</value>
+  </data>
+  <data name="AboutAssessmentLinkSpanish" xml:space="preserve">
+    <value>Proceso de Evaluación</value>
+  </data>
+  <data name="AboutContentEnglish" xml:space="preserve">
+    <value>This is the content for About Assessments in English</value>
+  </data>
+  <data name="ASGMemberLabelEnglish" xml:space="preserve">
+    <value>IUCN Taxonomic Specialist Group member (Y/N)?</value>
+  </data>
+  <data name="ASGMemberLabelSpanish" xml:space="preserve">
+    <value>¿Miembro del Grupo Especialista Taxonómicos de la UICN (S/N)?</value>
+  </data>
+  <data name="AssessmentResultsLinkEnglish" xml:space="preserve">
+    <value>Assessment Results</value>
+  </data>
+  <data name="CancelButtonEnglish" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CancelButtonSpanish" xml:space="preserve">
+    <value>Cancelar</value>
+  </data>
+  <data name="ContactUsContentTextEnglish" xml:space="preserve">
+    <value>You may contact us for more information at...</value>
+  </data>
+  <data name="ContactUsContentTextSpanish" xml:space="preserve">
+    <value>Puede comunicarse con nosotros para obtener más información en...</value>
+  </data>
+  <data name="ContactUsLinkEnglish" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="ContactUsLinkSpanish" xml:space="preserve">
+    <value>Contáctenos</value>
+  </data>
+  <data name="CountryLabelEnglish" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="CountryLabelSpanish" xml:space="preserve">
+    <value>País</value>
+  </data>
+  <data name="DefaultContentTextEnglish" xml:space="preserve">
+    <value>Conservation resources are limited, and with thousands of threatened species in need of help the Conservation Needs Assessment process seeks to objectively and consistently identify priority species and their immediate conservation needs.</value>
+  </data>
+  <data name="DefaultContentTextSpanish" xml:space="preserve">
+    <value>Los recursos de conservación son limitados, y con miles de especies amenazadas que necesitan ayuda, el proceso de evaluación de las necesidades de conservación descrito a continuación busca identificar de manera objetiva y sistemática las especies prioritarias y sus necesidades inmediatas de conservación.</value>
+  </data>
+  <data name="EmailLabelEnglish" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="English" xml:space="preserve">
+    <value>Strings.en-US.resx</value>
+  </data>
+  <data name="FirstNameLabelEnglish" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="FirstNameLabelSpanish" xml:space="preserve">
+    <value>Nombre de pila</value>
+  </data>
+  <data name="ForgetPasswordEnglish" xml:space="preserve">
+    <value>Forgot Password?</value>
+  </data>
+  <data name="ForgetPasswordSpanish" xml:space="preserve">
+    <value>¿Olvidaste tu contraseña?</value>
+  </data>
+  <data name="GeneralInsertErrorEnglish" xml:space="preserve">
+    <value>Error inserting record. Please try again.</value>
+  </data>
+  <data name="GeneralInsertErrorSpanish" xml:space="preserve">
+    <value>Error al insertar registros. Por favor, inténtalo de nuevo.</value>
+  </data>
+  <data name="HeaderTextEnglish" xml:space="preserve">
+    <value>This is the header text in English</value>
+  </data>
+  <data name="HomeLinkEnglish" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="HomeLinkSpanish" xml:space="preserve">
+    <value>Página de Inicio</value>
+  </data>
+  <data name="LanguageContentTextEnglish" xml:space="preserve">
+    <value>Select language</value>
+  </data>
+  <data name="LanguageContentTextSpanish" xml:space="preserve">
+    <value>Por favor seleccione el idioma...</value>
+  </data>
+  <data name="LanguagesLinkEnglish" xml:space="preserve">
+    <value>Preferred Language</value>
+  </data>
+  <data name="LanguagesLinkSpanish" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="LastNameLabelEnglish" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="LastNameLabelSpanish" xml:space="preserve">
+    <value>Apellido</value>
+  </data>
+  <data name="LoginContentTextEnglish" xml:space="preserve">
+    <value>Assessors and National Facilitators must log in to the system to add or edit their assessments</value>
+  </data>
+  <data name="LoginContentTextSpanish" xml:space="preserve">
+    <value>Los asesores y facilitadores nacionales deben iniciar sesión en el sistema para agregar o editar sus evaluaciones</value>
+  </data>
+  <data name="LoginLabelEnglish" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginLabelSpanish" xml:space="preserve">
+    <value>Inicio de sesión</value>
+  </data>
+  <data name="LoginLinkEnglish" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginLinkSpanish" xml:space="preserve">
+    <value>Ingresar a mis evaluaciones</value>
+  </data>
+  <data name="LoginTextEnglish" xml:space="preserve">
+    <value>Login to my assessments</value>
+  </data>
+  <data name="LoginTextSpanish" xml:space="preserve">
+    <value>Ingresa a mis evaluaciones</value>
+  </data>
+  <data name="MapEnglish" xml:space="preserve">
+    <value>Click on the map to view national assessments</value>
+  </data>
+  <data name="MapSpanish" xml:space="preserve">
+    <value>Haga clic en el mapa para ver las evaluaciones nacionales</value>
+  </data>
+  <data name="NoRecordsFoundEnglish" xml:space="preserve">
+    <value>No records found.</value>
+  </data>
+  <data name="NoRecordsFoundSpanish" xml:space="preserve">
+    <value>No se encontraron registros.</value>
+  </data>
+  <data name="OrganizationLabelEnglish" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="OrganizationLabelSpanish" xml:space="preserve">
+    <value>Organización</value>
+  </data>
+  <data name="PasswordLabelEnglish" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="PasswordLabelSpanish" xml:space="preserve">
+    <value>Imprimir</value>
+  </data>
+  <data name="PhoneLabelEnglish" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="PhoneLabelSpanish" xml:space="preserve">
+    <value>Teléfono</value>
+  </data>
+  <data name="ReadMoreTextEnglish" xml:space="preserve">
+    <value>Read more...</value>
+  </data>
+  <data name="ReadMoreTextSpanish" xml:space="preserve">
+    <value>Lea más ...</value>
+  </data>
+  <data name="RecentAssessmentsEnglish" xml:space="preserve">
+    <value>Recent Assessments</value>
+  </data>
+  <data name="RecentAssessmentsSpanish" xml:space="preserve">
+    <value>Evaluaciones recientes</value>
+  </data>
+  <data name="RequiredFieldsErrorEnglish" xml:space="preserve">
+    <value>The following fields must be entered to register / signup to the system: Username, Password, Email, First Name, Last Name, Country, and Title. Please enter missing values and re-submit, thank you.</value>
+  </data>
+  <data name="RequiredFieldsErrorSpanish" xml:space="preserve">
+    <value>Los siguientes campos deben ser ingresados ​​para registrar / registrase en el sistema: Nombre de usuario, contraseña, correo electrónico, nombre, apellido, país y título. Por favor ingresa los datos solicitados y envíalos de nuevo, gracias.</value>
+  </data>
+  <data name="SaveButtonEnglish" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="SaveButtonSpanish" xml:space="preserve">
+    <value>Guardar</value>
+  </data>
+  <data name="SearchContentTextEnglish" xml:space="preserve">
+    <value>Find a species assessment</value>
+  </data>
+  <data name="SearchContentTextSpanish" xml:space="preserve">
+    <value>Encontrar la evaluación de una especie</value>
+  </data>
+  <data name="SearchLinkEnglish" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchLinkSpanish" xml:space="preserve">
+    <value>Búsqueda de</value>
+  </data>
+  <data name="SignupButtonEnglish" xml:space="preserve">
+    <value>Sign up to get started!</value>
+  </data>
+  <data name="SignupButtonSpanish" xml:space="preserve">
+    <value>¡Regístrate para comenzar!</value>
+  </data>
+  <data name="SignupContentEnglish" xml:space="preserve">
+    <value>Please enter the following information to become a registered user. You will receive an email welcoming you to access the system when your request has been approved.</value>
+  </data>
+  <data name="SignupContentSpanish" xml:space="preserve">
+    <value>Por favor, introduce la siguiente información para convertirte en un usuario registrado. Recibirás un correo electrónico de bienvenida para acceder al sistema cuando tu solicitud haya sido aprobada.</value>
+  </data>
+  <data name="SignupHeaderEnglish" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="SignupHeaderSpanish" xml:space="preserve">
+    <value>Regístrate</value>
+  </data>
+  <data name="SignupTextEnglish" xml:space="preserve">
+    <value>Not yet an assessor?</value>
+  </data>
+  <data name="SignupTextSpanish" xml:space="preserve">
+    <value>¿Aún no eres evaluador?</value>
+  </data>
+  <data name="SubmitButtonEnglish" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="SubmitButtonSpanish" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="SuccessInsertUserEnglish" xml:space="preserve">
+    <value>Thank you for signing up! Your information has been entered into our system and is pending administrative approval. You will receive an email once approved to login to the system.</value>
+  </data>
+  <data name="SuccessInsertUserSpanish" xml:space="preserve">
+    <value>¡Gracias por suscribirse! Tu información ha sido ingresada en nuestro sistema y está a la espera de aprobación administrativa. Recibirás un correo electrónico una vez seas aprobado para iniciar sesión en el sistema.</value>
+  </data>
+  <data name="TitleLabelEnglish" xml:space="preserve">
+    <value>Job Title</value>
+  </data>
+  <data name="TitleLabelSpanish" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="UsernameLabelEnglish" xml:space="preserve">
+    <value>User Name</value>
+  </data>
+  <data name="UsernameLabelSpanish" xml:space="preserve">
+    <value>Nombre de Usuario</value>
+  </data>
+  <data name="WelcomeTextEnglish" xml:space="preserve">
+    <value>Welcome to Conservation Needs Assessments!</value>
+  </data>
+  <data name="WelcomeTextSpanish" xml:space="preserve">
+    <value>¡Bienvenido a la Evaluación de las Necesidades de Conservación!</value>
+  </data>
+  <data name="TopRightHomeContentEnglish" xml:space="preserve">
+    <value>Scientists, field biologists, animal husbandry experts and others are vital to the success of the conservation needs assessments. Sharing your expertise and experiences will enhance our assessments, ensuring that conservation actions are delivered where they are most needed. </value>
+  </data>
+  <data name="TopRightHomeContentSpanish" xml:space="preserve">
+    <value>Para el éxito de las evaluaciones de necesidades de conservación son de vital importancia los científicos, biólogos de campo, expertos en la cría de animales y otros. Compartir su experiencia y conocimientos mejorará nuestras evaluaciones, asegurando que las acciones de conservación se lleven a cabo en donde más se les necesita.</value>
+  </data>
+  <data name="TopRightHomeTitleEnglish" xml:space="preserve">
+    <value>Would you like to become an Assessor?</value>
+  </data>
+  <data name="TopRightHomeTitleSpanish" xml:space="preserve">
+    <value>¿Le gustaría convertirse en un evaluador?</value>
+  </data>
+  <data name="SearchMainEnglish" xml:space="preserve">
+    <value>To view completed assessments, please select a country and/or enter a species name.</value>
+  </data>
+  <data name="SearchMainSpanish" xml:space="preserve">
+    <value>Para ver las evaluaciones realizadas, por favor selecciona un país y/o ingresa el nombre de una especie.</value>
+  </data>
+  <data name="SpeciesLabelEnglish" xml:space="preserve">
+    <value>Species</value>
+  </data>
+  <data name="SpeciesLabelSpanish" xml:space="preserve">
+    <value>Especie</value>
+  </data>
+  <data name="CheckBoxResultsTextEnglish" xml:space="preserve">
+    <value>Show only my assessments</value>
+  </data>
+  <data name="CheckBoxResultsTextSpanish" xml:space="preserve">
+    <value>Mostrar sólo mis evaluaciones</value>
+  </data>
+  <data name="AssessorInfoContent1English" xml:space="preserve">
+    <value>Scientists, field biologists, animal husbandry experts and others are vital to the success of the conservation needs assessments. Sharing your expertise and experiences will enhance our assessments, ensuring that appropriate conservation actions are delivered where they are most needed.</value>
+  </data>
+  <data name="AssessorInfoContent1Spanish" xml:space="preserve">
+    <value>Los científicos, biólogos de campo, expertos en la cría de anfibios y otros son de vital importancia para el éxito de las evaluaciones de las necesidades de conservación. Al compartir su experiencia y pericia mejorarán nuestras evaluaciones, asegurando que se lleven a cabo las acciones de conservación apropiadas en donde más se les necesita.
+
+</value>
+  </data>
+  <data name="AssessorInfoTitleEnglish" xml:space="preserve">
+    <value>Would you like to become an Assessor?</value>
+  </data>
+  <data name="AssessorInfoTitleSpanish" xml:space="preserve">
+    <value>¿Te gustaría convertirse en Evaluador?</value>
+  </data>
+  <data name="SearchResultsNoCurrentUserEnglish" xml:space="preserve">
+    <value>Unable to limit search results to your assessments - you are not currently logged in to the system. Please login to the system to view / search your Assessments.</value>
+  </data>
+  <data name="SearchResultsNoCurrentUserSpanish" xml:space="preserve">
+    <value>No es posible delimitar los resultados de búsqueda para tus evaluaciones - no has iniciado sesión en el sistema. Por favor ingresa al sistema para ver / buscar tus evaluaciones.</value>
+  </data>
+  <data name="DuplicateUserNameErrorEnglish" xml:space="preserve">
+    <value>The UserName you entered already exists in our database. Please enter a different UserName to sign up, thank you.</value>
+  </data>
+  <data name="DuplicateUserNameErrorSpanish" xml:space="preserve">
+    <value>El nombre de usuario que hsa introducido ya existe en nuestra base de datos. Por favor, introduce un nombre de usuario diferente para inscribirte, gracias.</value>
+  </data>
+  <data name="AssessorInfoContent2English" xml:space="preserve">
+    <value>A complete assessment for each species includes current information on the status of the species in the wild; suitable habitat; the threats facing each species; cultural, scientific, socio-economic and phylogenetic significance; and past ex situ experience with the species, as well as information about potential authorization for any proposed ex situ conservation programs, and the availability of founder animals. Some of this information is best provided by field biologists and researchers, and some will be provided by people with relevant experience or knowledge of past ex situ conservation programs.</value>
+  </data>
+  <data name="AssessorInfoContent2Spanish" xml:space="preserve">
+    <value>Una evaluación completa de cada especie incluye información actual sobre el estado de la especie en el medio silvestre, hábitat adecuado, amenazas que enfrenta cada especie, significado cultural, científico, socioeconómico y filogenético; y experiencia pasada ex situ con la especie, así como información acerca de la autorización potencial para los programas de conservación ex situ propuestos, y la disponibilidad de animales fundadores. Parte de esta información es proporcionada generalmente por biólogos de campo e investigadores, y otra parte será aportada por personas con experiencia o conocimientos relevantes de programas de conservación ex situ pasados.</value>
+  </data>
+  <data name="AssessorInfoContent3BEnglish" xml:space="preserve">
+    <value>to become an approved assessor. You request will be verified by local IUCN Amphibian Specialist Group facilitators and/or Amphibian Ark staff, and you will receive an email as soon as your request as been approved</value>
+  </data>
+  <data name="AssessorInfoContent3BSpanish" xml:space="preserve">
+    <value>para convertirte en un evaluador aprobado. Tu solicitud será verificada por los facilitadores locales del Grupo  Especilista de Anfibios de la UICN y / o personal del Arca de Anfibios, y recibirá un correo electrónico tan pronto como tu solicitud sea aprobada.</value>
+  </data>
+  <data name="AssessorInfoContent3English" xml:space="preserve">
+    <value>We welcome anyone with the appropriate expertise to contribute to the assessments, and if you would like to become an assessor, please complete a short</value>
+  </data>
+  <data name="AssessorInfoContent3LinkEnglish" xml:space="preserve">
+    <value>registration form</value>
+  </data>
+  <data name="AssessorInfoContent3LinkSpanish" xml:space="preserve">
+    <value>formulario de registro</value>
+  </data>
+  <data name="AssessorInfoContent3Spanish" xml:space="preserve">
+    <value>Damos la bienvenida a cualquier persona con los conocimientos adecuados para contribuir a las evaluaciones, y si deseas convertitse en un asesor, por favor completa un breve</value>
+  </data>
+  <data name="AssessorInfoContent4English" xml:space="preserve">
+    <value>Assessments are generally completed for each species at a national level, rather than for the global distribution of the species, since conservation actions are most often prioritized and implemented at the national level, and priorities can and will vary from country to country.</value>
+  </data>
+  <data name="AssessorInfoContent4FutureEnglish" xml:space="preserve">
+    <value>[Need some brief information here about how to add a new assessment, once the screens have been completed]</value>
+  </data>
+  <data name="AssessorInfoContent4FutureSpanish" xml:space="preserve">
+    <value>[Necesita una breve información aquí acerca de cómo agregar una nueva evaluación, una vez que las pantallas se han completado]</value>
+  </data>
+  <data name="AssessorInfoContent4HeaderEnglish" xml:space="preserve">
+    <value>Adding new assessments</value>
+  </data>
+  <data name="AssessorInfoContent4HeaderSpanish" xml:space="preserve">
+    <value>Añadir nuevas evaluaciones</value>
+  </data>
+  <data name="AssessorInfoContent4Spanish" xml:space="preserve">
+    <value>Las evaluaciones generalmente se completan para cada especie a nivel nacional, en lugar de para la distribución mundial de la especie, ya que las acciones de conservación son más a menudo priorizadas e implementadas a nivel nacional, y las prioridades pueden y van a variar de un país a otro.</value>
+  </data>
+  <data name="AssessorInfoContent5English" xml:space="preserve">
+    <value>The status of wild populations of species will change over time, and sometimes these changes can be quite significant, over short periods of time. Under normal circumstances, we recommend that all species assessments should be reviewed and if necessary, updated, every five years. In the event that there is a significant change to the status of the wild population of a species, existing assessments should be updated as new information is obtained, to ensure that national conservation priorities reflect the current status of the species in the wild.</value>
+  </data>
+  <data name="AssessorInfoContent5FutureEnglish" xml:space="preserve">
+    <value>[Need some brief information here about how to update an existing assessment, once the screens have been completed]</value>
+  </data>
+  <data name="AssessorInfoContent5FutureSpanish" xml:space="preserve">
+    <value>[Necesita una breve información aquí acerca de cómo actualizar una evaluación existente, una vez que las pantallas se han completado]</value>
+  </data>
+  <data name="AssessorInfoContent5HeaderEnglish" xml:space="preserve">
+    <value>Updating your existing assessments</value>
+  </data>
+  <data name="AssessorInfoContent5HeaderSpanish" xml:space="preserve">
+    <value>Actualizando sus evaluaciones existentes</value>
+  </data>
+  <data name="AssessorInfoContent5Spanish" xml:space="preserve">
+    <value>La situación de las poblaciones silvestres de las especies  cambia con el tiempo, y a veces estos cambios pueden ser muy importantes en períodos cortos de tiempo. En circunstancias normales se recomienda que todas las evaluaciones de especies se revisen  y si es necesario actualicen cada cinco años. En el caso de que se produzca un cambio significativo de la situación de la población silvestre de una especie, las evaluaciones existentes deben actualizarse a medida que se obtiene nueva información para garantizar que las prioridades nacionales de conservación reflejen el estado actual de la especie en la naturaleza.</value>
+  </data>
+  <data name="AssessorInfoContent6BEnglish" xml:space="preserve">
+    <value>, where scientists, field biologists, animal husbandry experts and other stakeholders met, and worked as a single group to assess all of the species of a given Class (e.g. amphibians), in the particular country or region. This process results in a single assessment for each species for each of the countries that the species occurs in. Using this online application multiple assessors will work independently from each other, and sometimes, multiple assessments will be submitted for the same species in the same country or region. It is likely that due to the differing individual expertise and experiences of each assessor, that some of the assessment data will differ between assessments for the same species. Although each and every individual assessment record can be viewed, most reports within this application will report “consolidated”, summary assessments which combine all of the assessments for a given species in each country or region. This consolidation will allow for the different areas of expertise from multiple assessors to be factored into a more holistic assessment of the conservation needs for each species.</value>
+  </data>
+  <data name="AssessorInfoContent6BSpanish" xml:space="preserve">
+    <value>, donde científicos, biólogos de campo, expertos en la cría de anfibios y otras partes interesadas se reunieron y trabajaron como un solo grupo para evaluar todas las especies de una Clase determinada (en este caso, los Anfibios), en un país o región en particular. Este proceso resulta en una única evaluación de cada especie para cada uno de los países en el que la especie se encuentra. Usando  esta aplicación en línea, múltiples evaluadores trabajarán de forma independiente el uno del otro, y a veces, múltiples evaluaciones serán presentadas para la misma especie en el mismo país o región. Es probable que, debido a la diferente experiencia y vivencias de cada evaluador, que algunos de los datos de la evaluación varíen según las evaluaciones de la misma especie. Aunque todos y cada uno de los registros individuales de evaluación se puede ver, la mayoría de los informes dentro de esta aplicación presentarán evaluaciones "consolidadas",  un resumen de la evaluación que combina todas las evaluaciones para una especie determinada en cada país o región. Esta consolidación permitirá tener en cuenta a las diferentes áreas de conocimiento de múltiples evaluadores en una evaluación más holística de las necesidades de conservación de cada especie.</value>
+  </data>
+  <data name="AssessorInfoContent6English" xml:space="preserve">
+    <value>Prior to the development of this online application, conservation needs assessments were generally carried out during</value>
+  </data>
+  <data name="AssessorInfoContent6HeaderEnglish" xml:space="preserve">
+    <value>Online assessments</value>
+  </data>
+  <data name="AssessorInfoContent6HeaderSpanish" xml:space="preserve">
+    <value>Evaluaciones en línea</value>
+  </data>
+  <data name="AssessorInfoContent6LinkEnglish" xml:space="preserve">
+    <value>physical workshops</value>
+  </data>
+  <data name="AssessorInfoContent6LinkSpanish" xml:space="preserve">
+    <value>talleres físicos</value>
+  </data>
+  <data name="AssessorInfoContent6Spanish" xml:space="preserve">
+    <value>Antes del desarrollo de esta aplicación en línea, generalmente se llevaban a cabo las evaluaciones de necesidades de conservación en</value>
+  </data>
+  <data name="AssessmentOverviewContent1English" xml:space="preserve">
+    <value>Conservation resources are limited, and with thousands of threatened species in need of help the conservation needs assessment process outlined below seeks to objectively and consistently identify priority species and their immediate conservation needs.</value>
+  </data>
+  <data name="AssessmentOverviewContent1HeaderEnglish" xml:space="preserve">
+    <value>Background</value>
+  </data>
+  <data name="AssessmentOverviewContent1HeaderSpanish" xml:space="preserve">
+    <value>Antecedentes</value>
+  </data>
+  <data name="AssessmentOverviewContent1Spanish" xml:space="preserve">
+    <value>Los recursos de conservación son limitados, y con miles de especies amenazadas que necesitan ayuda, el proceso de evaluación de las necesidades de conservación descrito a continuación busca identificar de manera objetiva y sistemática especies prioritarias y sus necesidades inmediatas de conservación.</value>
+  </data>
+  <data name="AssessmentOverviewContent2BEnglish" xml:space="preserve">
+    <value>in El Valle de Anton, Panama, when a taxon selection and prioritization working group developed a decision tree for the selection and prioritization of taxa that are most in need of ex situ assistance. The decision tree has subsequently been further reviewed and refined, and has now evolved into the Amphibian Ark Conservation Needs Assessment process. The assessment process has proven to be a logical, transparent, and repeatable procedure for guiding amphibian conservation activities within a country or region.</value>
+  </data>
+  <data name="AssessmentOverviewContent2BSpanish" xml:space="preserve">
+    <value>en El Valle de Antón, Panamá, donde un grupo de trabajo de selección y priorización de taxón desarrolló un árbol de decisión para la selección y priorización de los taxones que están más necesitados de asistencia ex situ. El árbol de decisión, posteriormente, se ha revisado y refinado en profundidad, y se ha convertido ahora en el proceso de Evaluación de Necesidades de Conservación del Arca de Anfibios. El proceso de evaluación ha demostrado ser un procedimiento lógico, transparente y repetible para orientar las actividades de conservación de anfibios dentro de un país o región.</value>
+  </data>
+  <data name="AssessmentOverviewContent2English" xml:space="preserve">
+    <value>The Conservation Needs Assessment process was initially developed in 2006, during an</value>
+  </data>
+  <data name="AssessmentOverviewContent2LinkEnglish" xml:space="preserve">
+    <value>Amphibian Ex Situ Conservation Planning workshop</value>
+  </data>
+  <data name="AssessmentOverviewContent2LinkSpanish" xml:space="preserve">
+    <value>Taller de Planeación de Conservación Ex Situ</value>
+  </data>
+  <data name="AssessmentOverviewContent2Spanish" xml:space="preserve">
+    <value>El proceso de Evaluación de las Necesidades de Conservación fue desarrollado inicialmente en el 2006, durante el</value>
+  </data>
+  <data name="AssessmentOverviewContent3English" xml:space="preserve">
+    <value>The conservation needs assessment tool has been structured in two sections:</value>
+  </data>
+  <data name="AssessmentOverviewContent3Spanish" xml:space="preserve">
+    <value>La herramienta de evaluación de las necesidades de conservación se ha estructurado en dos secciones:</value>
+  </data>
+  <data name="AssessmentOverviewContent4BEnglish" xml:space="preserve">
+    <value>with weighted scores. The total score for a species determines its priority for conservation action.</value>
+  </data>
+  <data name="AssessmentOverviewContent4BSpanish" xml:space="preserve">
+    <value>con puntajes ponderados. La puntuación total de una especie determina su prioridad para la acción de conservación.</value>
+  </data>
+  <data name="AssessmentOverviewContent4English" xml:space="preserve">
+    <value>The first section concerns assessing species for both in situ and ex situ conservation actions - i.e. with limited resources (space, staff, money etc.) which species should have ex situ programs established ahead of others; which species urgently need field research or protection, etc. It takes the form of</value>
+  </data>
+  <data name="AssessmentOverviewContent4LinkEnglish" xml:space="preserve">
+    <value>a series of questions</value>
+  </data>
+  <data name="AssessmentOverviewContent4LinkSpanish" xml:space="preserve">
+    <value>una serie de preguntas</value>
+  </data>
+  <data name="AssessmentOverviewContent4Spanish" xml:space="preserve">
+    <value>Las primera sección se refiere a la evaluación de las especies, tanto para acciones de conservación in situ como ex situ - es decir, con los limitados recursos (espacio, personal, dinero, etc), cuáles especies deben tener programas ex situ establecidas por delante de los demás; cuáles especies necesitan con urgencia una investigación de campo o protección, etc. Se presenta en forma de</value>
+  </data>
+  <data name="AssessmentOverviewContent5BEnglish" xml:space="preserve">
+    <value>ensuring that there is authorization for any proposed ex situ conservation program, and that founder animals are available.</value>
+  </data>
+  <data name="AssessmentOverviewContent5BSpanish" xml:space="preserve">
+    <value>garantizando que se dispone de autorización para cualquier programa de conservación ex situ propuesto, y que los animales fundadores están disponibles.</value>
+  </data>
+  <data name="AssessmentOverviewContent5English" xml:space="preserve">
+    <value>The second section includes</value>
+  </data>
+  <data name="AssessmentOverviewContent5LinkEnglish" xml:space="preserve">
+    <value>questions</value>
+  </data>
+  <data name="AssessmentOverviewContent5LinkSpanish" xml:space="preserve">
+    <value>preguntas</value>
+  </data>
+  <data name="AssessmentOverviewContent5Spanish" xml:space="preserve">
+    <value>La segunda sección incluye</value>
+  </data>
+  <data name="AssessmentOverviewContent6English" xml:space="preserve">
+    <value>Some questions may not be straightforward to answer and will require consultation with colleagues, taxonomic experts and other individuals/groups working with the species.</value>
+  </data>
+  <data name="AssessmentOverviewContent6Spanish" xml:space="preserve">
+    <value>Algunas preguntas pueden no ser fáciles de responder y requerirán consultas con colegas, expertos en taxonomía y otros individuos / grupos de trabajo con las especies.</value>
+  </data>
+  <data name="AssessmentOverviewContent7BEnglish" xml:space="preserve">
+    <value>A series of prioritized reports is generated for each conservation action, and these are then be used to determine the next steps required for the conservation of each species - at the national level, this is most often a</value>
+  </data>
+  <data name="AssessmentOverviewContent7BSpanish" xml:space="preserve">
+    <value>Se genera una serie de informes priorizados para cada acción de conservación, y estos se utilizarán entonces para determinar los próximos pasos necesarios para la conservación de cada especie - a nivel nacional, esto es  más a menudo un</value>
+  </data>
+  <data name="AssessmentOverviewContent7CEnglish" xml:space="preserve">
+    <value>for the group of species being assessed (e.g. Amphibians).</value>
+  </data>
+  <data name="AssessmentOverviewContent7CSpanish" xml:space="preserve">
+    <value>para el grupo de especies que se evalúa (en este caso para Anfibios).</value>
+  </data>
+  <data name="AssessmentOverviewContent7English" xml:space="preserve">
+    <value>The information provided in sections one and two is then used to categorize each species for one or more</value>
+  </data>
+  <data name="AssessmentOverviewContent7Link2English" xml:space="preserve">
+    <value>National Action Plan</value>
+  </data>
+  <data name="AssessmentOverviewContent7Link2Spanish" xml:space="preserve">
+    <value>Plan Nacional de Acción</value>
+  </data>
+  <data name="AssessmentOverviewContent7LinkEnglish" xml:space="preserve">
+    <value>conservation actions.</value>
+  </data>
+  <data name="AssessmentOverviewContent7LinkSpanish" xml:space="preserve">
+    <value>acciones de conservación.</value>
+  </data>
+  <data name="AssessmentOverviewContent7Spanish" xml:space="preserve">
+    <value>La información proporcionada en los apartados uno y dos se utiliza para categorizar cada especie para una o más</value>
+  </data>
+  <data name="AssessmentOverviewContent8BEnglish" xml:space="preserve">
+    <value>where scientists, field biologists, animal husbandry experts and other stakeholders met, and worked as a single group to assess all of the species of a given Class (e.g. amphibians), in the particular country or region. This process results in a single assessment for each species for each of the countries that the species occurs in. Using this online application multiple assessors will work independently from each other, and sometimes, multiple assessments will be submitted for the same species in the same country or region. It is likely that due to the differing individual expertise and experiences of each assessor, that some of the assessment data will differ between assessments for the same species. Although each and every individual assessment record can be viewed, most reports within this application will report “consolidated”, summary assessments which combine all of the assessments for a given species in each country or region. This consolidation will allow for the different areas of expertise from multiple assessors to be factored into a more holistic assessment of the conservation needs for each species.</value>
+  </data>
+  <data name="AssessmentOverviewContent8BSpanish" xml:space="preserve">
+    <value>donde científicos, biólogos de campo, expertos en la cría de anfibios y otras partes interesadas se reunieron y trabajaron como un solo grupo para evaluar todas las especies de una Clase determinada (en este caso, los Anfibios), en un país o región en particular. Este proceso resulta en una única evaluación de cada especie para cada uno de los países en el que la especie se encuentra. Usando  esta aplicación en línea, múltiples evaluadores trabajarán de forma independiente el uno del otro, y a veces, múltiples evaluaciones serán presentadas para la misma especie en el mismo país o región. Es probable que, debido a la diferente experiencia y vivencias de cada evaluador, que algunos de los datos de la evaluación varíen según las evaluaciones de la misma especie. Aunque todos y cada uno de los registros individuales de evaluación se puede ver, la mayoría de los informes dentro de esta aplicación presentarán evaluaciones "consolidadas",  un resumen de la evaluación que combina todas las evaluaciones para una especie determinada en cada país o región. Esta consolidación permitirá tenerse en cuenta a las diferentes áreas de conocimiento de múltiples evaluadores en una evaluación más holística de las necesidades de conservación de cada especie.</value>
+  </data>
+  <data name="AssessmentOverviewContent8English" xml:space="preserve">
+    <value>Prior to the development of this online application, conservation needs assessments were generally carried out during</value>
+  </data>
+  <data name="AssessmentOverviewContent8HeaderEnglish" xml:space="preserve">
+    <value>Online assessments</value>
+  </data>
+  <data name="AssessmentOverviewContent8HeaderSpanish" xml:space="preserve">
+    <value>Evaluaciones en línea</value>
+  </data>
+  <data name="AssessmentOverviewContent8LinkEnglish" xml:space="preserve">
+    <value>physical workshops,</value>
+  </data>
+  <data name="AssessmentOverviewContent8LinkSpanish" xml:space="preserve">
+    <value>talleres presenciales,</value>
+  </data>
+  <data name="AssessmentOverviewContent8Spanish" xml:space="preserve">
+    <value>Antes del desarrollo de esta aplicación en línea, generalmente se llevaban a cabo las evaluaciones de necesidades de conservación en</value>
+  </data>
+  <data name="AssessmentOverviewContent9English" xml:space="preserve">
+    <value>Ex situ conservation of any threatened species should be considered a necessity when the imperative of in situ conservation cannot by itself ensure the survival of a species and its ecosystem. When ex situ management of a species is considered necessary and appropriate, the priority should be to establish the initiative within the range State of ecological origin, wherever possible. Emphasis should therefore be placed on developing appropriate capacity within the range State where this does not exist. However, if the perceived urgency of the situation requires it, ex situ programs will be set up outside of range State wherever expertise and other resources are forthcoming.</value>
+  </data>
+  <data name="AssessmentOverviewContent9HeaderEnglish" xml:space="preserve">
+    <value>Ex situ management actions</value>
+  </data>
+  <data name="AssessmentOverviewContent9HeaderSpanish" xml:space="preserve">
+    <value>Medidas de manejo ex situ</value>
+  </data>
+  <data name="AssessmentOverviewContent9Spanish" xml:space="preserve">
+    <value>La conservación ex situ de las especies amenazadas debe considerarse una necesidad solamente cuando la conservación in situ no puede por sí sola garantizar la supervivencia de una especie y su ecosistema. Cuando se considere necesario y apropiado el manejo ex situ de las especies, la prioridad debe ser establecer la iniciativa dentro del país de origen ecológico, siempre que sea posible. Por lo tanto, debe hacerse hincapié en el desarrollo de la capacidad adecuada en el país de origen si esta no existe. Sin embargo, si la urgencia percibida de la situación lo requiere, los programas ex situ se instalarán fuera del país de origen donde la experiencia y otros recursos estén disponibles.</value>
+  </data>
+  <data name="AssessmentOverviewTitleEnglish" xml:space="preserve">
+    <value>Conservation Needs Assessments</value>
+  </data>
+  <data name="AssessmentOverviewTitleSpanish" xml:space="preserve">
+    <value>Evaluación de las Necesidades de Conservación</value>
+  </data>
+  <data name="AssessmentOverviewContent10English" xml:space="preserve">
+    <value>Ideally an ex situ initiative should be temporary in nature and viewed as just one of the tools that can help in the overall conservation of a species. It therefore follows that strong links between ex situ and in situ components are fundamental to the long-term success of species conservation. Full integration between ex situ and in situ conservation approaches should be sought wherever possible. This is normally best highlighted through the establishment of a formal Taxon Management Plan that explicitly states the short, medium and long term goals of each component of the conservation initiative.</value>
+  </data>
+  <data name="AssessmentOverviewContent10Spanish" xml:space="preserve">
+    <value>Idealmente una iniciativa ex situ debe ser de carácter temporal y se ve como una de las herramientas que pueden ayudar en la conservación global de la especie. De ello se desprende que los fuertes vínculos entre la conservación ex situ e in situ de los componentes son fundamentales para el éxito a largo plazo de la conservación de las especies. Se debe buscar siempre que sea posible la integración completa entre ex situ y los enfoques de conservación in situ. Esto normalmente mejor resalta mediante el establecimiento formal de un Plan de Gestión del Taxón que establece explícitamente los objetivos a corto, mediano y largo plazo de cada componente de la iniciativa de conservación.</value>
+  </data>
+  <data name="AssessmentOverviewContent11English" xml:space="preserve">
+    <value>In cases where an ex situ conservation initiative has been established prior to, or in the absence of, a concurrent in situ initiative (e.g. where a political situation currently prohibits in situ conservation measures, or where a disease problem currently invalidates measures to protect wild populations), emphasis should be placed on establishing the appropriate in situ links as soon as it becomes possible to do so in order to achieve the end goal of having the species safely back in nature.</value>
+  </data>
+  <data name="AssessmentOverviewContent11Spanish" xml:space="preserve">
+    <value>En los casos en que una iniciativa de conservación ex situ se haya establecido antes de, o en ausencia de una iniciativa in situ concurrente (por ejemplo, cuando una situación política prohíbe actualmente las medidas de conservación in situ, o cuando un problema como enfermedad actualmente invalida medidas para proteger a las poblaciones silvestres ), se debe hacer hincapié en el establecimiento de los adecuados lazos in situ, tan pronto como sea posible  con el fin de lograr el objetivo final de tener la especie segura y de vuelta en la naturaleza.</value>
+  </data>
+  <data name="AssessmentOverviewContent12BEnglish" xml:space="preserve">
+    <value>which considers the practical feasibility of initiating and maintaining a program – a sort of check list of essential elements prior to initiation, and this tool can easily be used for other Classes, when considering the practical feasibility of initiating and maintaining a program.</value>
+  </data>
+  <data name="AssessmentOverviewContent12BSpanish" xml:space="preserve">
+    <value>que considere la viabilidad práctica de iniciar y mantener un programa - un tipo de lista de verificación de los elementos esenciales antes de iniciar, y esta herramienta se puede utilizar fácilmente para otras Clases, al considerar la viabilidad práctica de iniciar y mantener un programa.</value>
+  </data>
+  <data name="AssessmentOverviewContent12English" xml:space="preserve">
+    <value>When considering Implementation of an ex situ program, each facility should ensure they have the appropriate resources in place to manage that species for the entire term of the ex situ program. The Amphibian Ark has developed a</value>
+  </data>
+  <data name="AssessmentOverviewContent12LinkEnglish" xml:space="preserve">
+    <value>Program Implementation tool</value>
+  </data>
+  <data name="AssessmentOverviewContent12LinkSpanish" xml:space="preserve">
+    <value>Herramienta de Implementación del Programa</value>
+  </data>
+  <data name="AssessmentOverviewContent12Spanish" xml:space="preserve">
+    <value>Al considerar la implementación de un programa de conservación ex situ, cada instalación debe asegurarse de que tienen los recursos adecuados en el lugar para manejar esta especie durante todo el plazo del programa ex situ. El Arca de Anfibios ha desarrollado una</value>
+  </data>
+  <data name="AssessmentOverviewContent13English" xml:space="preserve">
+    <value>While a number of very successful conservation programs have begun, and are currently underway without following all of these steps, it is strongly recommends that where possible, these steps are all followed, to ensure the best possible outcome for the population being managed.</value>
+  </data>
+  <data name="AssessmentOverviewContent13Spanish" xml:space="preserve">
+    <value>Si bien se han iniciado una serie de programas de conservación con gran éxito, y estos se encuentran actualmente en curso sin seguir todos estos pasos, se recomienda fuertemente que siempre que sea posible, se sigan todos estos pasos  para garantizar el mejor resultado posible para la población que está siendo manejada.</value>
+  </data>
+  <data name="AssessmentOverviewContent14English" xml:space="preserve">
+    <value>It cannot be emphasised enough how important it is to ensure that adequate resources, including skilled staff, appropriate food, funding, veterinary services etc. can be provided for the expected life of the ex situ program. Many programs run for five, ten, or even more years, and sufficient resources to support the program for the whole of this time must be available if the program is to be successful. Establishing facilities and collecting rescue populations is only the first, albeit perhaps the single greatest expense. However, it is insufficient to support only those first-year expenses without operational support for the long term, which as stated above, may amount to years or even decades. In addition to financial planning, ex situ programs should establish at the onset a plan for working with partners to mitigate threats in the wild and, where necessary, getting animals back into the wild, as well as how to distribute and properly manage the progeny of captive animals in the interim.</value>
+  </data>
+  <data name="AssessmentOverviewContent14Spanish" xml:space="preserve">
+    <value>No se puede enfatizar suficientemente lo importante que es  asegurar que los recursos adecuados, incluidos el personal calificado, alimentación adecuada,  financiamiento,  servicios veterinarios, etc. se puedan proporcionar para la vida esperada del programa ex situ. Muchos programas se llevarán a cabo durante cinco, diez, o incluso más años, y deben estar disponibles  recursos suficientes para apoyar el programa por el tiempo necesario si es que queremos que el programa sea exitoso. El establecimiento de las instalaciones y la colecta de los individuos para las poblaciones de rescate es sólo el primero, aunque tal vez el mayor gasto individual. Sin embargo, es insuficiente  apoyar sólo los gastos del primer año sin el apoyo operativo para el largo plazo, que como se ha dicho, puede equivaler a años o incluso décadas. Además de la planificación financiera, los programas ex situ deben establecer en el inicio un plan para trabajar con los socios para mitigar las amenazas en la naturaleza y, en su caso, enviar animales de vuelta a su hábitat natural, así como la forma de distribuir y gestionar adecuadamente la progenie de animales en cautiverio en el ínterin.</value>
+  </data>
+  <data name="AssessmentOverviewContent15BEnglish" xml:space="preserve">
+    <value>(en Español –</value>
+  </data>
+  <data name="AssessmentOverviewContent15BSpanish" xml:space="preserve">
+    <value>(en Español –</value>
+  </data>
+  <data name="AssessmentOverviewContent15CEnglish" xml:space="preserve">
+    <value>This tool is available as an</value>
+  </data>
+  <data name="AssessmentOverviewContent15CSpanish" xml:space="preserve">
+    <value>Esta herramienta está disponible como</value>
+  </data>
+  <data name="AssessmentOverviewContent15DEnglish" xml:space="preserve">
+    <value>or it can be</value>
+  </data>
+  <data name="AssessmentOverviewContent15DSpanish" xml:space="preserve">
+    <value>o puede ser</value>
+  </data>
+  <data name="AssessmentOverviewContent15EEnglish" xml:space="preserve">
+    <value>The tool is also available in</value>
+  </data>
+  <data name="AssessmentOverviewContent15English" xml:space="preserve">
+    <value>If hope remains that a species can be saved as the result of ex situ breeding, any number of founder animals is better than none, however, it is strongly recommended that at least twenty pairs of animals (or groups of individuals) are collected as founder animals. Ideally these would be unrelated and will successfully reproduce, but of course that cannot be guaranteed. Realize that many more than this number may have to be captured to ensure that twenty pairs actually survive and successfully reproduce. Searches for the sufficient number of founders should be thorough and complete, and if exhaustive searches do not result in a minimum of twenty pairs of founders, searching should continue after the program has been initiated. The Amphibian Ark has developed a tool to help calculate the number of founders that should be collected, based on the reproductive biology of the species being considered. The tool uses data from AArk’s</value>
+  </data>
+  <data name="AssessmentOverviewContent15ESpanish" xml:space="preserve">
+    <value>La herramienta también está disponible en</value>
+  </data>
+  <data name="AssessmentOverviewContent15Link2English" xml:space="preserve">
+    <value>Guidelines for the Management of Amphibian Populations).</value>
+  </data>
+  <data name="AssessmentOverviewContent15Link2Spanish" xml:space="preserve">
+    <value>Lineamientos para el Manejo de Poblaciones de Anfibios).</value>
+  </data>
+  <data name="AssessmentOverviewContent15Link3English" xml:space="preserve">
+    <value>online founder calculation tool</value>
+  </data>
+  <data name="AssessmentOverviewContent15Link3Spanish" xml:space="preserve">
+    <value>herramienta en línea para  cálculo de fundadores</value>
+  </data>
+  <data name="AssessmentOverviewContent15Link4English" xml:space="preserve">
+    <value>(or en Español)</value>
+  </data>
+  <data name="AssessmentOverviewContent15Link4Spanish" xml:space="preserve">
+    <value>(o en Español)</value>
+  </data>
+  <data name="AssessmentOverviewContent15Link5English" xml:space="preserve">
+    <value>downloaded and used offline.</value>
+  </data>
+  <data name="AssessmentOverviewContent15Link5Spanish" xml:space="preserve">
+    <value>descargada y utilizada fuera de línea.</value>
+  </data>
+  <data name="AssessmentOverviewContent15Link6English" xml:space="preserve">
+    <value>Spanish.</value>
+  </data>
+  <data name="AssessmentOverviewContent15Link6Spanish" xml:space="preserve">
+    <value>Español.</value>
+  </data>
+  <data name="AssessmentOverviewContent15LinkEnglish" xml:space="preserve">
+    <value>Amphibian Population Management Guidelines</value>
+  </data>
+  <data name="AssessmentOverviewContent15LinkSpanish" xml:space="preserve">
+    <value>Lineamientos para el Manejo de Poblaciones de Anfibios</value>
+  </data>
+  <data name="AssessmentOverviewContent15Spanish" xml:space="preserve">
+    <value>Si la esperanza es que una especie pueda ser salvada como  resultado del manejo  ex situ, cualquier número de animales fundadores es mejor que nada, sin embargo, se recomienda encarecidamente que al menos veinte parejas de animales (o grupos de individuos) se colecten como animales fundadores. Lo ideal sería que estos no tuvieran  relación de parentezco y que se reproduzcan con éxito, pero por supuesto que esto no puede ser garantizado. Hay que pensar que debemos colectar más  individuos para asegurarnos que veinte pares en realidad sobreviven y se reproducen con éxito. La búsqueda  de un número suficiente de  fundadores debe ser minuciosa y completa, y si la búsqueda exhaustiva no resulta en un mínimo de veinte pares de fundadores, la búsqueda debe continuar después de haber iniciado el programa. El Arca de Anfibios ha desarrollado una herramienta para ayudar a calcular el número de fundadores que deben ser colectados, basada en la biología reproductiva de las especies que se están considerando. La herramienta utiliza datos de AArk de los</value>
+  </data>
+  <data name="AssessmentOverviewContent16English" xml:space="preserve">
+    <value>The conservation needs assessment tool has been an evolving protocol. The criteria and their rankings have been adjusted as experience with the process was gained, and we continue to work with the broader conservation community to identify goals, threats, and conservation options. Assessments and prioritisation of individual species should be revised as we gain knowledge and as the threats to the species change. Thus, there will be a need to constantly assess species status and monitor threats, so that emerging critical situations are responded to sufficiently quickly.</value>
+  </data>
+  <data name="AssessmentOverviewContent16Spanish" xml:space="preserve">
+    <value>La herramienta de evaluación de necesidades de conservación ha sido un protocolo en evolución. Los criterios y su clasificación se han ajustado ya que se ha ganado experiencia con el proceso, y nosotros continuaremos trabajando con la comunidad de conservación para identificar objetivos, amenazas y opciones de conservación. Las evaluaciones y priorización de especies individuales deben ser revisadas a medida que adquirimos conocimientos y cambian las las amenazas para las  especies. Por lo tanto, habrá una necesidad de evaluar constantemente el estado de las especies y monitorear las amenazas, de manera  que se responda a las situaciones emergentes críticas con la suficiente rapidez.</value>
+  </data>
+  <data name="AssessmentResultsTitleSpanish" xml:space="preserve">
+    <value>Resultado de la Evaluación</value>
+  </data>
+  <data name="FamilyLabelEnglish" xml:space="preserve">
+    <value>Family:</value>
+  </data>
+  <data name="FamilyLabelSpanish" xml:space="preserve">
+    <value>Familia:</value>
+  </data>
+  <data name="GlobalRLCLabelEnglish" xml:space="preserve">
+    <value>IUCN Global Red List:</value>
+  </data>
+  <data name="GlobalRLCLabelSpanish" xml:space="preserve">
+    <value>UICN Lista Roja:</value>
+  </data>
+  <data name="NationalRLCLabelEnglish" xml:space="preserve">
+    <value>IUCN National Red List:</value>
+  </data>
+  <data name="NationalRLCLabelSpanish" xml:space="preserve">
+    <value>UICN Lista Roja Nacional:</value>
+  </data>
+  <data name="OrderLabelEnglish" xml:space="preserve">
+    <value>Order:</value>
+  </data>
+  <data name="OrderLabelSpanish" xml:space="preserve">
+    <value>Orden:</value>
+  </data>
+  <data name="AddObservationINaturalistLabelEnglish" xml:space="preserve">
+    <value>Submit your observations of this species to iNaturalist and they will appear on this map.</value>
+  </data>
+  <data name="AddObservationINaturalistLabelSpanish" xml:space="preserve">
+    <value>Envíe sus observaciones de esta especie a iNaturalist y aparecerán en este mapa.</value>
+  </data>
+  <data name="DistributionLabelEnglish" xml:space="preserve">
+    <value>Distribution:</value>
+  </data>
+  <data name="DistributionLabelSpanish" xml:space="preserve">
+    <value>Distribución:</value>
+  </data>
+  <data name="EDScoreLabelEnglish" xml:space="preserve">
+    <value>Evolutionary Distinctiveness score:</value>
+  </data>
+  <data name="EDScoreLabelSpanish" xml:space="preserve">
+    <value>Puntuación de Distintivo Evolutivo:</value>
+  </data>
+  <data name="RedListMapLabelEnglish" xml:space="preserve">
+    <value>IUCN Red List assessment</value>
+  </data>
+  <data name="RedListMapLabelSpanish" xml:space="preserve">
+    <value>Evaluación de la Lista Roja de la IUCN</value>
+  </data>
+  <data name="AssessmentQuestionsLabelEnglish" xml:space="preserve">
+    <value>Assessment Questions</value>
+  </data>
+  <data name="AssessmentQuestionsLabelSpanish" xml:space="preserve">
+    <value>Preguntas de Evaluación</value>
+  </data>
+  <data name="AssessmentResultsByLabelEnglish" xml:space="preserve">
+    <value>by:</value>
+  </data>
+  <data name="AssessmentResultsByLabelSpanish" xml:space="preserve">
+    <value>por:</value>
+  </data>
+  <data name="AssessmentResultsCountryLabelEnglish" xml:space="preserve">
+    <value>Assessed for:</value>
+  </data>
+  <data name="AssessmentResultsCountryLabelSpanish" xml:space="preserve">
+    <value>Evaluado por:</value>
+  </data>
+  <data name="AssessmentResultsOnLabelEnglish" xml:space="preserve">
+    <value>on:</value>
+  </data>
+  <data name="AssessmentResultsOnLabelSpanish" xml:space="preserve">
+    <value>en:</value>
+  </data>
+  <data name="CreateAssessmentTitleEnglish" xml:space="preserve">
+    <value>Create Assessment</value>
+  </data>
+  <data name="CreateAssessmentTitleSpanish" xml:space="preserve">
+    <value>Crea una Evaluación</value>
+  </data>
+  <data name="Section1TitleEnglish" xml:space="preserve">
+    <value>Section 1 - Questions</value>
+  </data>
+  <data name="Section1TitleSpanish" xml:space="preserve">
+    <value>Sección 1 - Preguntas</value>
+  </data>
+  <data name="Section2TitleEnglish" xml:space="preserve">
+    <value>Section 2 - Questions</value>
+  </data>
+  <data name="Section2TitleSpanish" xml:space="preserve">
+    <value>Sección 2 - Preguntas</value>
+  </data>
+  <data name="Section3TitleEnglish" xml:space="preserve">
+    <value>Section 3 - Questions</value>
+  </data>
+  <data name="Section3TitleSpanish" xml:space="preserve">
+    <value>Sección 3 - Preguntas</value>
+  </data>
+  <data name="Section4TitleEnglish" xml:space="preserve">
+    <value>Section 4 - Questions</value>
+  </data>
+  <data name="Section4TitleSpanish" xml:space="preserve">
+    <value>Sección 4 - Preguntas</value>
+  </data>
+  <data name="Section5TitleEnglish" xml:space="preserve">
+    <value>Section 5 - Questions</value>
+  </data>
+  <data name="Section5TitleSpanish" xml:space="preserve">
+    <value>Sección 5 - Preguntas</value>
+  </data>
+  <data name="Section6TitleEnglish" xml:space="preserve">
+    <value>Section 6 - Questions</value>
+  </data>
+  <data name="Section6TitleSpanish" xml:space="preserve">
+    <value>Sección 6 - Preguntas</value>
+  </data>
+  <data name="PADefinitionEnglish" xml:space="preserve">
+    <value>Definition:</value>
+  </data>
+  <data name="PADefinitionSpanish" xml:space="preserve">
+    <value>Definición:</value>
+  </data>
+  <data name="InvalidLoginErrorTextEnglish" xml:space="preserve">
+    <value>Invalid UserID / Password. Please contact administrator to get login credentials.</value>
+  </data>
+  <data name="InvalidLoginErrorTextSpanish" xml:space="preserve">
+    <value>Invalid ID de usuario / contraseña. Por favor, póngase en contacto con el administrador para obtener las credenciales de inicio de sesión.</value>
+  </data>
+  <data name="CommentsLabelEnglish" xml:space="preserve">
+    <value>Comments:</value>
+  </data>
+  <data name="CommentsLabelSpanish" xml:space="preserve">
+    <value>Comentarios:</value>
+  </data>
+  <data name="SuccessSaveEnglish" xml:space="preserve">
+    <value>Your assessment has been saved successfully, thank you.</value>
+  </data>
+  <data name="SuccessSaveSpanish" xml:space="preserve">
+    <value>Tu evaluación ha sido guardada con éxito, gracias.</value>
+  </data>
+  <data name="EditAssessmentTitleEnglish" xml:space="preserve">
+    <value>Edit Assessment</value>
+  </data>
+  <data name="EditAssessmentTitleSpanish" xml:space="preserve">
+    <value>Editar Evaluación</value>
+  </data>
+  <data name="MarkAssessmentCompleteTextEnglish" xml:space="preserve">
+    <value>Mark my assessment as "complete"</value>
+  </data>
+  <data name="MarkAssessmentCompleteTextSpanish" xml:space="preserve">
+    <value>Marcar mi evaluación como "completa"</value>
+  </data>
+  <data name="EmailLabelSpanish" xml:space="preserve">
+    <value>Correo electrónico</value>
+  </data>
+  <data name="HeaderTextSpanish" xml:space="preserve">
+    <value>Este es el texto del encabezado en Español</value>
+  </data>
+  <data name="TriggerRecEnglish" xml:space="preserve">
+    <value>Recommendation:</value>
+  </data>
+  <data name="TriggerRecSpanish" xml:space="preserve">
+    <value>Recomendación:</value>
+  </data>
+  <data name="CommonNameLabelEnglish" xml:space="preserve">
+    <value>Common Name</value>
+  </data>
+  <data name="CommonNameLabelSpanish" xml:space="preserve">
+    <value>Nombre Común</value>
+  </data>
+  <data name="TotalAssessmentsLabelEnglish" xml:space="preserve">
+    <value>Total Assessments</value>
+  </data>
+  <data name="TotalAssessmentsLabelSpanish" xml:space="preserve">
+    <value>Total de las Evaluaciones</value>
+  </data>
+  <data name="AddAssessmentLabelEnglish" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddAssessmentLabelSpanish" xml:space="preserve">
+    <value>Adjuntar</value>
+  </data>
+  <data name="EditAssessmentLabelEnglish" xml:space="preserve">
+    <value>Edit my assessment</value>
+  </data>
+  <data name="EditAssessmentLabelSpanish" xml:space="preserve">
+    <value>Editar mi evaluación</value>
+  </data>
+  <data name="SaveAssessmentEnglish" xml:space="preserve">
+    <value>Save Assessment</value>
+  </data>
+  <data name="SaveAssessmentSpanish" xml:space="preserve">
+    <value>Guardar Evaluación</value>
+  </data>
+  <data name="AssessmentResultsLinkSpanish" xml:space="preserve">
+    <value>Resultados de Evaluaciones</value>
+  </data>
+  <data name="AssessmentSearchAllNewEnglish" xml:space="preserve">
+    <value>Add Assessments</value>
+  </data>
+  <data name="AssessmentSearchAllNewSpanish" xml:space="preserve">
+    <value>Adjuntar Evaluaciones</value>
+  </data>
+  <data name="AssessmentSearchNewEnglish" xml:space="preserve">
+    <value>View Assessments</value>
+  </data>
+  <data name="AssessmentSearchNewSpanish" xml:space="preserve">
+    <value>Ver Evaluaciones</value>
+  </data>
+  <data name="LocalCommonNameLabelEnglish" xml:space="preserve">
+    <value>Local Common Name</value>
+  </data>
+  <data name="LocalCommonNameLabelSpanish" xml:space="preserve">
+    <value>Nombre Común Local</value>
+  </data>
+  <data name="SearchAllMainEnglish" xml:space="preserve">
+    <value>To add or update assessments, please select a country and/or enter a species name.</value>
+  </data>
+  <data name="SearchAllMainSpanish" xml:space="preserve">
+    <value>Para  añadir o actualizar evaluaciones, por favor selecciona un país y/o ingresa el nombre de una especie.</value>
+  </data>
+  <data name="SearchAllTitleEnglish" xml:space="preserve">
+    <value>Add or Update Assessments</value>
+  </data>
+  <data name="SearchAllTitleSpanish" xml:space="preserve">
+    <value>Añadir o actualizar evaluaciones</value>
+  </data>
+  <data name="SearchTitleEnglish" xml:space="preserve">
+    <value>View completed assessments</value>
+  </data>
+  <data name="SearchTitleSpanish" xml:space="preserve">
+    <value>Ver evaluaciones realizadas</value>
+  </data>
+  <data name="DashboardLinkEnglish" xml:space="preserve">
+    <value>My Dashboard</value>
+  </data>
+  <data name="DashboardLinkSpanish" xml:space="preserve">
+    <value>Mi Panel</value>
+  </data>
+  <data name="EditIncompleteAssessmentLabelEnglish" xml:space="preserve">
+    <value>Complete my assessment</value>
+  </data>
+  <data name="EditIncompleteAssessmentLabelSpanish" xml:space="preserve">
+    <value>Completar mi evaluación</value>
+  </data>
+  <data name="HelpLinkEnglish" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="HelpLinkSpanish" xml:space="preserve">
+    <value>Ayuda</value>
+  </data>
+  <data name="AssessedByEnglishLabel" xml:space="preserve">
+    <value>Assessed by</value>
+  </data>
+  <data name="AssessedBySpanishLabel" xml:space="preserve">
+    <value>Evaluado por</value>
+  </data>
+  <data name="NotApprovedTextEnglish" xml:space="preserve">
+    <value>Only approved users may create assessments. Please contact the system administrator to check the status of your user credentials.</value>
+  </data>
+  <data name="NotApprovedTextSpanish" xml:space="preserve">
+    <value>Solo pueden crear evaluaciones los usuarios aprobados. Por favor contacta al administrador del sistema para checar el estado de sus credenciales de usuario.</value>
+  </data>
+  <data name="QuestionNumberLabelEnglish" xml:space="preserve">
+    <value>Question #</value>
+  </data>
+  <data name="QuestionNumberLabelSpanish" xml:space="preserve">
+    <value>Pregunta #</value>
+  </data>
+  <data name="QuestionTextLabelEnglish" xml:space="preserve">
+    <value>Question Text</value>
+  </data>
+  <data name="QuestionTextLabelSpanish" xml:space="preserve">
+    <value>Texto de la Pregunta</value>
+  </data>
+  <data name="ResponseLabelEnglish" xml:space="preserve">
+    <value>Response</value>
+  </data>
+  <data name="ResponseLabelSpanish" xml:space="preserve">
+    <value>Respuesta</value>
+  </data>
+  <data name="ShortNameLabelEnglish" xml:space="preserve">
+    <value>Short Name</value>
+  </data>
+  <data name="ShortNameLabelSpanish" xml:space="preserve">
+    <value>Nombre Corto</value>
+  </data>
+  <data name="DeleteTextEnglish" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteTextSpanish" xml:space="preserve">
+    <value>Eliminar</value>
+  </data>
+  <data name="LeavePageLabelEnglish" xml:space="preserve">
+    <value>Leave this page</value>
+  </data>
+  <data name="LeavePageLabelSpanish" xml:space="preserve">
+    <value>Salir de esta página</value>
+  </data>
+  <data name="StayPageLabelEnglish" xml:space="preserve">
+    <value>Stay on this page</value>
+  </data>
+  <data name="StayPageLabelSpanish" xml:space="preserve">
+    <value>Permanecer en esta página</value>
+  </data>
+  <data name="IncompleteRecTextEnglish" xml:space="preserve">
+    <value>Assessment not yet complete</value>
+  </data>
+  <data name="IncompleteRecTextSpanish" xml:space="preserve">
+    <value>La evaluación no se ha completado todavía</value>
+  </data>
+  <data name="UserCountriesTextEnglish" xml:space="preserve">
+    <value>Expertise in the species of which countries?</value>
+  </data>
+  <data name="UserCountriesTextSpanish" xml:space="preserve">
+    <value>¿Experiencia en las especies de qué países?</value>
+  </data>
+  <data name="WarningSaveDisabledEnglish" xml:space="preserve">
+    <value>Warning: The Save button is disabled. You must be in your original language to Save any changes to this assessment.</value>
+  </data>
+  <data name="WarningSaveDisabledSpanish" xml:space="preserve">
+    <value>Advertencia: El botón Guardar está deshabilitado. Debse estar en el idioma original para guardar los cambios de esta evaluación.</value>
+  </data>
+  <data name="AddCommentsLabelEnglish" xml:space="preserve">
+    <value>Additional Comments:</value>
+  </data>
+  <data name="AddCommentsLabelSpanish" xml:space="preserve">
+    <value>Comentarios adicionales:</value>
+  </data>
+  <data name="AssessmentStatusLabelEnglish" xml:space="preserve">
+    <value>Assessment Status:</value>
+  </data>
+  <data name="AssessmentStatusLabelSpanish" xml:space="preserve">
+    <value>Estado de Evaluación:</value>
+  </data>
+  <data name="CompletedLabelEnglish" xml:space="preserve">
+    <value>Completed</value>
+  </data>
+  <data name="CompletedLabelSpanish" xml:space="preserve">
+    <value>Finalizado</value>
+  </data>
+  <data name="IncompleteLabelEnglish" xml:space="preserve">
+    <value>Incomplete</value>
+  </data>
+  <data name="IncompleteLabelSpanish" xml:space="preserve">
+    <value>Incompleta</value>
+  </data>
+  <data name="AssessSaveOKTriggerDelEnglish" xml:space="preserve">
+    <value>Your assessment has been saved successfully. Please note - recommendations have not been created since the assessment is marked as incomplete. To create recommendations, please complete the assessment, mark it as complete and re-save.</value>
+  </data>
+  <data name="AssessSaveOKTriggerDelSpanish" xml:space="preserve">
+    <value>Tu evaluación ha sido guardado con éxito. Ten en cuenta - no se han creado las recomendaciones ya que la evaluación se marca como incompleta. Para crear recomendaciones, por favor completa la evaluación, márcarla como completa y vuelve  a guardarla.</value>
+  </data>
+  <data name="HelpTopic1LabelEnglish" xml:space="preserve">
+    <value>Topic 1</value>
+  </data>
+  <data name="HelpTopic1LabelSpanish" xml:space="preserve">
+    <value>Tópico 1</value>
+  </data>
+  <data name="HelpTopic2LabelEnglish" xml:space="preserve">
+    <value>Topic 2</value>
+  </data>
+  <data name="HelpTopic2LabelSpanish" xml:space="preserve">
+    <value>Tópico 2</value>
+  </data>
+  <data name="HelpTopic3LabelEnglish" xml:space="preserve">
+    <value>Topic 3</value>
+  </data>
+  <data name="HelpTopic3LabelSpanish" xml:space="preserve">
+    <value>Tópico 3</value>
+  </data>
+  <data name="HelpTopic4LabelEnglish" xml:space="preserve">
+    <value>Topic 4</value>
+  </data>
+  <data name="HelpTopic4LabelSpanish" xml:space="preserve">
+    <value>Tópico 4</value>
+  </data>
+  <data name="AdminDashboardEnglish" xml:space="preserve">
+    <value>Administrator Dashboard</value>
+  </data>
+  <data name="AdminDashboardSpanish" xml:space="preserve">
+    <value>Panel de Administrador</value>
+  </data>
+  <data name="AssessorDashboardEnglish" xml:space="preserve">
+    <value>Assessor Dashboard</value>
+  </data>
+  <data name="AssessorDashboardSpanish" xml:space="preserve">
+    <value>Panel de Evaluador</value>
+  </data>
+  <data name="FacilitatorDashboardEnglish" xml:space="preserve">
+    <value>Facilitator Dashboard</value>
+  </data>
+  <data name="FacilitatorDashboardSpanish" xml:space="preserve">
+    <value>Panel de Facilitador</value>
+  </data>
+  <data name="ApproveAssessorParagraphTextEnglish" xml:space="preserve">
+    <value>Please review any requests from people requesting to become assessors in your country or region. These are at the top of the list, and their Status = Not Approved. If you agree that the person has the appropriate expertise to be an assessor, please click the Approved link.</value>
+  </data>
+  <data name="ApproveAssessorParagraphTextSpanish" xml:space="preserve">
+    <value>Por favor revise cualquier solicitud de personas que quieren ser asesores en su país o región. Están son las prioritarias, y su Estado = No Aprobado. Si considera que la persona tiene la suficiente experiencia para ser un asesor, por favor pulse la liga de Aprobado.</value>
+  </data>
+  <data name="ApprovedLabelEnglish" xml:space="preserve">
+    <value>Approved</value>
+  </data>
+  <data name="ApprovedLabelSpanish" xml:space="preserve">
+    <value>Aprobada</value>
+  </data>
+  <data name="ApproveTextEnglish" xml:space="preserve">
+    <value>Approve</value>
+  </data>
+  <data name="ApproveTextSpanish" xml:space="preserve">
+    <value>Aprobar</value>
+  </data>
+  <data name="ApproveUserRequestEnglish" xml:space="preserve">
+    <value>Approve a Request from a New Assessor</value>
+  </data>
+  <data name="ApproveUserRequestSpanish" xml:space="preserve">
+    <value>Apruebe la Solicitud para un Nuevo Asesor</value>
+  </data>
+  <data name="AssessorParagraphTextEnglish" xml:space="preserve">
+    <value>The following list contains any of your assessments that have not been marked as Complete. Please review the assessment details, complete them, and then mark them as Complete, so these assessments can then be included in national and global conservation action reports.</value>
+  </data>
+  <data name="AssessorParagraphTextSpanish" xml:space="preserve">
+    <value>La siguiente lista contiene cualquier evaluación que no haya sido marca como Terminada. Por favor revisa los detalles de la evaluación, complétala, y luego márcala como Terminada, de manera que estas evaluaciones puedan ser incluidas en los reportes de acciones de conservación nacional o global.</value>
+  </data>
+  <data name="DenyTextEnglish" xml:space="preserve">
+    <value>Deny</value>
+  </data>
+  <data name="DenyTextSpanish" xml:space="preserve">
+    <value>Negar</value>
+  </data>
+  <data name="MyIncompleteAssessmentsEnglish" xml:space="preserve">
+    <value>My Incomplete Assessments</value>
+  </data>
+  <data name="MyIncompleteAssessmentsSpanish" xml:space="preserve">
+    <value>Mis evaluaciones incompletas</value>
+  </data>
+  <data name="NotApprovedLabelEnglish" xml:space="preserve">
+    <value>Not Approved</value>
+  </data>
+  <data name="NotApprovedLabelSpanish" xml:space="preserve">
+    <value>No Aprobada</value>
+  </data>
+  <data name="ApproveCompletedAssessmentsEnglish" xml:space="preserve">
+    <value>Review and validate completed assessments</value>
+  </data>
+  <data name="ApproveCompletedAssessmentsParagraphTextEnglish" xml:space="preserve">
+    <value>The following assessments have been marked as Complete, but need to be reviewed and then approved, so they can be included in national and global conservation action reports. Please review assessments in your country/region, and if the assessments appear to be accurate, click the Approved link, to "formalize" these assessments.</value>
+  </data>
+  <data name="ApproveCompletedAssessmentsParagraphTextSpanish" xml:space="preserve">
+    <value>Las siguientes evaluaciones ha sido marcadas como Terminadas, pero necesitan ser revisadas y luego aprobadas de manera que puedan ser incluidas en los reportes de acciones de conservación nacional o global. Por favor revise las evaluaciones en su país/región y si la evaluación parece ser adecuada, pulse la liga Aprobado, para “formalizar” esas evaluaciones.</value>
+  </data>
+  <data name="ApproveCompletedAssessmentsSpanish" xml:space="preserve">
+    <value>Revise y valide las evaluaciones terminadas</value>
+  </data>
+  <data name="UnapproveLabelEnglish" xml:space="preserve">
+    <value>Unapprove</value>
+  </data>
+  <data name="UnapproveLabelSpanish" xml:space="preserve">
+    <value>Desaprobar</value>
+  </data>
+  <data name="ReportsLabelEnglish" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="ReportsLabelSpanish" xml:space="preserve">
+    <value>Reportes</value>
+  </data>
+  <data name="EditUserProfileInstructionsEnglish" xml:space="preserve">
+    <value>Click the green link above to update any of profile details or to change your password.</value>
+  </data>
+  <data name="EditUserProfileInstructionsSpanish" xml:space="preserve">
+    <value>Seleccione la liga verde de arriba para actualizar los detalles de su perfil o para cambiar su contraseña.</value>
+  </data>
+  <data name="EditUserProfileLabelContentEnglish" xml:space="preserve">
+    <value>Update user profile information - please note your UserName cannot be changed. </value>
+  </data>
+  <data name="EditUserProfileLabelContentSpanish" xml:space="preserve">
+    <value>Modificar información del perfil de usuario - por favor nota que tu nombre de usuario no se podrá cambiar.</value>
+  </data>
+  <data name="EditUserProfileLabelEnglish" xml:space="preserve">
+    <value>Edit My Profile</value>
+  </data>
+  <data name="EditUserProfileLabelSpanish" xml:space="preserve">
+    <value>Modificar mis detalles</value>
+  </data>
+  <data name="UpdateProfileSuccessEnglish" xml:space="preserve">
+    <value>Thank you. Your profile information has been updated.</value>
+  </data>
+  <data name="UpdateProfileSuccessSpanish" xml:space="preserve">
+    <value>Gracias. La información de tu perfil ha sido actualizado.</value>
+  </data>
+  <data name="ApprovedUsersTitleEnglish" xml:space="preserve">
+    <value>Approved Users</value>
+  </data>
+  <data name="ApprovedUsersTitleSpanish" xml:space="preserve">
+    <value>Usuarios aprobados</value>
+  </data>
+  <data name="UserTypeLabelEnglish" xml:space="preserve">
+    <value>User Type</value>
+  </data>
+  <data name="UserTypeLabelSpanish" xml:space="preserve">
+    <value>Tipo de Usuario</value>
+  </data>
+  <data name="AssessmentDateLabelEnglish" xml:space="preserve">
+    <value>Assessment Date</value>
+  </data>
+  <data name="AssessmentDateLabelSpanish" xml:space="preserve">
+    <value>Fecha de Evaluación</value>
+  </data>
+  <data name="AssessmentsByUserLabelEnglish" xml:space="preserve">
+    <value>Assessments by User</value>
+  </data>
+  <data name="AssessmentsByUserLabelSpanish" xml:space="preserve">
+    <value>Evaluaciones realizadas por el usuario</value>
+  </data>
+  <data name="ApprovedUsersLinkInfoEnglish" xml:space="preserve">
+    <value>Details of all National Facilitators and Assessors</value>
+  </data>
+  <data name="ApprovedUsersLinkInfoSpanish" xml:space="preserve">
+    <value>Los detalles de todos los facilitadores nacionales y asesores</value>
+  </data>
+  <data name="AssessmentsByUserLinkInfoEnglish" xml:space="preserve">
+    <value>List of approved assessments by individual Assessors</value>
+  </data>
+  <data name="AssessmentsByUserLinkInfoSpanish" xml:space="preserve">
+    <value>Lista de evaluaciones aprobadas por los evaluadores individuales</value>
+  </data>
+  <data name="AboutContentFrench" xml:space="preserve">
+    <value>Voici le contenu de "A propos des évaluation" en anglais</value>
+  </data>
+  <data name="AddAssessmentLabelFrench" xml:space="preserve">
+    <value>Ajout</value>
+  </data>
+  <data name="AddObservationINaturalistLabelFrench" xml:space="preserve">
+    <value>Inscrivez vos observations sur cette espèce à iNaturalist et elles apparaitront sur cette carte.</value>
+  </data>
+  <data name="ASGMemberLabelFrench" xml:space="preserve">
+    <value>Membre du groupe de spécialistes en taxonomie de l'UICN?</value>
+  </data>
+  <data name="AssessmentOverviewContent1HeaderFrench" xml:space="preserve">
+    <value>Contexte</value>
+  </data>
+  <data name="AssessmentOverviewTitleFrench" xml:space="preserve">
+    <value>Évaluations des Besoins de Conservation</value>
+  </data>
+  <data name="AssessmentQuestionsLabelFrench" xml:space="preserve">
+    <value>Questions sur l'évaluation</value>
+  </data>
+  <data name="AssessmentResultsByLabelFrench" xml:space="preserve">
+    <value>par:</value>
+  </data>
+  <data name="AssessmentResultsCountryLabelFrench" xml:space="preserve">
+    <value>Évalué pour:</value>
+  </data>
+  <data name="AssessmentResultsLinkFrench" xml:space="preserve">
+    <value>Résultat de l'évaluation</value>
+  </data>
+  <data name="AssessmentResultsOnLabelFrench" xml:space="preserve">
+    <value>sur:</value>
+  </data>
+  <data name="CancelButtonFrench" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="CheckBoxResultsTextFrench" xml:space="preserve">
+    <value>Montrer seulement mes évaluations</value>
+  </data>
+  <data name="CommentsLabelFrench" xml:space="preserve">
+    <value>Commentaires:</value>
+  </data>
+  <data name="CommonNameLabelFrench" xml:space="preserve">
+    <value>Nom commun</value>
+  </data>
+  <data name="ContactUsContentTextFrench" xml:space="preserve">
+    <value>Vous pouvez nous contacter pour plus d'informations au ...</value>
+  </data>
+  <data name="ContactUsLinkFrench" xml:space="preserve">
+    <value>Nous contacter</value>
+  </data>
+  <data name="CountryLabelFrench" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="CreateAssessmentTitleFrench" xml:space="preserve">
+    <value>Créer une évaluation</value>
+  </data>
+  <data name="DistributionLabelFrench" xml:space="preserve">
+    <value>Distribution:</value>
+  </data>
+  <data name="DuplicateUserNameErrorFrench" xml:space="preserve">
+    <value>Le nom d'utilisateur que vous avez entré existe déjà sur notre base de données. Merci d'entrer un nom d'utilisateur différent pour vous inscrire.</value>
+  </data>
+  <data name="EditAssessmentLabelFrench" xml:space="preserve">
+    <value>Éditer mon évaluation</value>
+  </data>
+  <data name="EditAssessmentTitleFrench" xml:space="preserve">
+    <value>Éditer l'évaluation</value>
+  </data>
+  <data name="EDScoreLabelFrench" xml:space="preserve">
+    <value>Score de distinction évolutive:</value>
+  </data>
+  <data name="EmailLabelFrench" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="FamilyLabelFrench" xml:space="preserve">
+    <value>Famille:</value>
+  </data>
+  <data name="FirstNameLabelFrench" xml:space="preserve">
+    <value>Prénom</value>
+  </data>
+  <data name="ForgetPasswordFrench" xml:space="preserve">
+    <value>Mot de passe oublié ?</value>
+  </data>
+  <data name="GeneralInsertErrorFrench" xml:space="preserve">
+    <value>Erreur lors de l'insertion de votre enregistrement. S'il vous plaît essayez à nouveau.</value>
+  </data>
+  <data name="GlobalRLCLabelFrench" xml:space="preserve">
+    <value>Liste rouge de l'UICN:</value>
+  </data>
+  <data name="HeaderTextFrench" xml:space="preserve">
+    <value>Ceci est le texte d'en-tête en anglais</value>
+  </data>
+  <data name="HomeLinkFrench" xml:space="preserve">
+    <value>Page d'Accueil</value>
+  </data>
+  <data name="InvalidLoginErrorTextFrench" xml:space="preserve">
+    <value>Nom d'utilisateur/mot de passe invalide. Merci de contacter l'administrateur pour connaitre vos informations de connexions.</value>
+  </data>
+  <data name="LanguageContentTextFrench" xml:space="preserve">
+    <value>Choisissez votre langue</value>
+  </data>
+  <data name="LanguagesLinkFrench" xml:space="preserve">
+    <value>Langue Préférée</value>
+  </data>
+  <data name="LastNameLabelFrench" xml:space="preserve">
+    <value>Nom de famille</value>
+  </data>
+  <data name="LoginContentTextFrench" xml:space="preserve">
+    <value>Un nom d’utilisateur et un mot de passe sont nécessaires pour accéder au système. Merci de nous contacter si vous souhaitez vous connecter.</value>
+  </data>
+  <data name="LoginLinkFrench" xml:space="preserve">
+    <value>Connection</value>
+  </data>
+  <data name="LoginTextFrench" xml:space="preserve">
+    <value>Me connecter à mes évaluations</value>
+  </data>
+  <data name="MapFrench" xml:space="preserve">
+    <value>Cliquer sur la carte pour voir les évaluations nationales</value>
+  </data>
+  <data name="MarkAssessmentCompleteTextFrench" xml:space="preserve">
+    <value>Marquer mon évaluation comme "complète"</value>
+  </data>
+  <data name="NationalRLCLabelFrench" xml:space="preserve">
+    <value>Liste rouge nationales de l'UICN:</value>
+  </data>
+  <data name="NoRecordsFoundFrench" xml:space="preserve">
+    <value>Aucun enregistrement trouvé.</value>
+  </data>
+  <data name="OrderLabelFrench" xml:space="preserve">
+    <value>Ordre:</value>
+  </data>
+  <data name="OrganizationLabelFrench" xml:space="preserve">
+    <value>Organisation</value>
+  </data>
+  <data name="PADefinitionFrench" xml:space="preserve">
+    <value>Définition:</value>
+  </data>
+  <data name="PasswordLabelFrench" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="PhoneLabelFrench" xml:space="preserve">
+    <value>Téléphone</value>
+  </data>
+  <data name="ReadMoreTextFrench" xml:space="preserve">
+    <value>En savoir plus…</value>
+  </data>
+  <data name="RecentAssessmentsFrench" xml:space="preserve">
+    <value>Évaluations récentes</value>
+  </data>
+  <data name="RedListMapLabelFrench" xml:space="preserve">
+    <value>Liste rouge d'évaluation de l'UICN</value>
+  </data>
+  <data name="RequiredFieldsErrorFrench" xml:space="preserve">
+    <value>Les champs suivants doivent être saisis pour s'enregistrer / s'identifier sur le système: Nom d'utilisateur, mot de passe, e-mail, Prénom, Nom, Pays, et titre. Merci de compléter les informations manquantes et re-présenter une demande.</value>
+  </data>
+  <data name="SaveAssessmentFrench" xml:space="preserve">
+    <value>Sauvegarder mon évaluation</value>
+  </data>
+  <data name="SaveButtonFrench" xml:space="preserve">
+    <value>Sauvegarder</value>
+  </data>
+  <data name="SearchContentTextFrench" xml:space="preserve">
+    <value>Trouver l'évaluation d'une espèce</value>
+  </data>
+  <data name="SearchLinkFrench" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="AssessorInfoTitleFrench" xml:space="preserve">
+    <value>Souhaitez-vous devenir un évaluateur?</value>
+  </data>
+  <data name="Section1TitleFrench" xml:space="preserve">
+    <value>Section 1 - Questions</value>
+  </data>
+  <data name="Section2TitleFrench" xml:space="preserve">
+    <value>Section 2 - Questions</value>
+  </data>
+  <data name="Section3TitleFrench" xml:space="preserve">
+    <value>Section 3 - Questions</value>
+  </data>
+  <data name="Section4TitleFrench" xml:space="preserve">
+    <value>Section 4 - Questions</value>
+  </data>
+  <data name="Section5TitleFrench" xml:space="preserve">
+    <value>Section 5 - Questions</value>
+  </data>
+  <data name="Section6TitleFrench" xml:space="preserve">
+    <value>Section 6 - Questions</value>
+  </data>
+  <data name="SignupButtonFrench" xml:space="preserve">
+    <value>Identifiez-vous pour démarrer!</value>
+  </data>
+  <data name="SignupHeaderFrench" xml:space="preserve">
+    <value>Inscription</value>
+  </data>
+  <data name="SignupTextFrench" xml:space="preserve">
+    <value>Vous n'êtes pas encore un évaluateur?</value>
+  </data>
+  <data name="SpeciesLabelFrench" xml:space="preserve">
+    <value>Espèces</value>
+  </data>
+  <data name="SuccessInsertUserFrench" xml:space="preserve">
+    <value>Merci pour votre inscription ! Vos informations ont été entrées dans notre système et en attente d'approbation administrative. Vous recevrez un e-mail une fois approuvé pour vous connecter au système.</value>
+  </data>
+  <data name="SuccessSaveFrench" xml:space="preserve">
+    <value>Votre évaluation a été sauvegardée avec succès, merci.</value>
+  </data>
+  <data name="TitleLabelFrench" xml:space="preserve">
+    <value>Titre du travail</value>
+  </data>
+  <data name="TotalAssessmentsLabelFrench" xml:space="preserve">
+    <value>Total des évaluations</value>
+  </data>
+  <data name="TriggerRecFrench" xml:space="preserve">
+    <value>Recommandation:</value>
+  </data>
+  <data name="UsernameLabelFrench" xml:space="preserve">
+    <value>Nom d'Utilisateur</value>
+  </data>
+  <data name="WelcomeTextFrench" xml:space="preserve">
+    <value>Bienvenu sur l'évaluation des besoins de conservation!</value>
+  </data>
+  <data name="PrintLabelEnglish" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="PrintLabelFrench" xml:space="preserve">
+    <value>Imprimer</value>
+  </data>
+  <data name="PrintLabelSpanish" xml:space="preserve">
+    <value>Imprima</value>
+  </data>
+  <data name="NationalAssessmentsLabelEnglish" xml:space="preserve">
+    <value>National Recommended Conservation Actions</value>
+  </data>
+  <data name="NationalAssessmentsLabelInfoEnglish" xml:space="preserve">
+    <value>National, prioritized species lists for each recommended conservation action</value>
+  </data>
+  <data name="NationalAssessmentsLabelFrench" xml:space="preserve">
+    <value>Actions nationales de conservation recommandées</value>
+  </data>
+  <data name="NationalAssessmentsLabelInfoFrench" xml:space="preserve">
+    <value>Listes nationales d'espèces prioritaires pour chaque action de conservation recommandée</value>
+  </data>
+  <data name="NationalAssessmentsLabelSpanish" xml:space="preserve">
+    <value>Acciones Nacionales de Conservación Recomendadas</value>
+  </data>
+  <data name="NationalAssessmentsLabelInfoSpanish" xml:space="preserve">
+    <value>Lista nacional de especies priorizadas para cada acción de conservación recomendada</value>
+  </data>
+  <data name="AddCommentsLabelFrench" xml:space="preserve">
+    <value>Commentaires supplémentaires</value>
+  </data>
+  <data name="ApproveAssessorParagraphTextFrench" xml:space="preserve">
+    <value>Merci d'examiner les demandes de personnes demandant à devenir évaluateurs dans votre pays ou région. Ils sont au début de la liste, et leur statut = "Non approuvé". Si vous validez le fait que la personne a l'expertise nécessaire pour être un évaluateur, merci de cliquer sur le lien "Approuver".</value>
+  </data>
+  <data name="ApproveCompletedAssessmentsFrench" xml:space="preserve">
+    <value>Examiner et valider les évaluations complétées</value>
+  </data>
+  <data name="ApproveCompletedAssessmentsParagraphTextFrench" xml:space="preserve">
+    <value>Les évaluations suivantes ont été marquées comme "complètes", mais devront être examinées et approuvées, afin qu'elles puissent être inclues dans les rapports d'actions de conservation nationaux et internationaux. Merci d'examiner les évaluations dans votre pays/région, et si les évaluations semblent être exactes, cliquez sur le lien approuvé, afin " d'officialiser " ces évaluations .</value>
+  </data>
+  <data name="ApprovedUsersLinkInfoFrench" xml:space="preserve">
+    <value>Détails de tous les facilitateurs nationaux et évaluateurs</value>
+  </data>
+  <data name="ApprovedUsersTitleFrench" xml:space="preserve">
+    <value>Utilisateurs approuvés</value>
+  </data>
+  <data name="ApproveUserRequestFrench" xml:space="preserve">
+    <value>Approuver une demande d'un nouvel évaluateur</value>
+  </data>
+  <data name="AssessmentDateLabelFrench" xml:space="preserve">
+    <value>Date d'évaluation</value>
+  </data>
+  <data name="AssessmentsByUserLabelFrench" xml:space="preserve">
+    <value>Évaluations par utilisateurs</value>
+  </data>
+  <data name="AssessmentsByUserLinkInfoFrench" xml:space="preserve">
+    <value>Liste des évaluations approuvées par les évaluateurs</value>
+  </data>
+  <data name="AssessorParagraphTextFrench" xml:space="preserve">
+    <value>La liste suivante contient certaines de vos évaluations qui n'ont pas été marquées comme "complète". Merci d'examiner les détails des évaluations, les compléter, puis les marquer comme "complète", de sorte que ces évaluations puissent être inclues dans les rapports d'action de conservation nationaux et internationaux.</value>
+  </data>
+  <data name="DashboardLinkFrench" xml:space="preserve">
+    <value>Mon tableau de bord</value>
+  </data>
+  <data name="EditUserProfileInstructionsFrench" xml:space="preserve">
+    <value>Cliquez sur le lien vert ci-dessus pour mettre à jour les détails du profil ou changer votre mot de passe.</value>
+  </data>
+  <data name="HelpLinkFrench" xml:space="preserve">
+    <value>Aide</value>
+  </data>
+  <data name="IncompleteRecTextFrench" xml:space="preserve">
+    <value>Évaluation non encore complète</value>
+  </data>
+  <data name="LeavePageLabelFrench" xml:space="preserve">
+    <value>Quitter cette page</value>
+  </data>
+  <data name="MyIncompleteAssessmentsFrench" xml:space="preserve">
+    <value>Mes évaluations incomplètes</value>
+  </data>
+  <data name="NotApprovedTextFrench" xml:space="preserve">
+    <value>Seuls les utilisateurs autorisés peuvent créer des évaluations. Merci de contacter l'administrateur système pour vérifier l'état de vos informations d'identification d'utilisateur.</value>
+  </data>
+  <data name="ReportsLabelFrench" xml:space="preserve">
+    <value>Rapports</value>
+  </data>
+  <data name="SearchAllMainFrench" xml:space="preserve">
+    <value>Pour ajouter ou modifier des évaluations, merci de sélectionner un pays et/ou d'entrer un nom d'espèce.</value>
+  </data>
+  <data name="SearchAllTitleFrench" xml:space="preserve">
+    <value>Ajouter ou modifier des évaluations</value>
+  </data>
+  <data name="SearchMainFrench" xml:space="preserve">
+    <value>Pour voir les évaluations terminées,  merci de sélectionner un pays et/ou d'entrer un nom d'espèce.</value>
+  </data>
+  <data name="SearchTitleFrench" xml:space="preserve">
+    <value>Voir les évaluations terminées</value>
+  </data>
+  <data name="StayPageLabelFrench" xml:space="preserve">
+    <value>Rester sur cette page</value>
+  </data>
+  <data name="UserCountriesTextFrench" xml:space="preserve">
+    <value>Expertise dans les espèces de quels pays?</value>
+  </data>
+  <data name="WarningSaveDisabledFrench" xml:space="preserve">
+    <value>Attention: Le bouton Enregistrer est désactivé. Vous devez être dans votre langue d''origine pour enregistrer les modifications à cette évaluation.</value>
+  </data>
+  <data name="PriorityLabelEnglish" xml:space="preserve">
+    <value>Priority</value>
+  </data>
+  <data name="PriorityLabelFrench" xml:space="preserve">
+    <value>Priorité</value>
+  </data>
+  <data name="PriorityLabelSpanish" xml:space="preserve">
+    <value>Prioridad</value>
+  </data>
+  <data name="SortByLabelEnglish" xml:space="preserve">
+    <value>Sort by:</value>
+  </data>
+  <data name="SortByLabelFrench" xml:space="preserve">
+    <value>Trier par:</value>
+  </data>
+  <data name="SortByLabelSpanish" xml:space="preserve">
+    <value>Ordenar por:</value>
+  </data>
+  <data name="TaxonomicLabelEnglish" xml:space="preserve">
+    <value>Taxonomic</value>
+  </data>
+  <data name="TaxonomicLabelFrench" xml:space="preserve">
+    <value>Taxonomique</value>
+  </data>
+  <data name="TaxonomicLabelSpanish" xml:space="preserve">
+    <value>Taxonómica</value>
+  </data>
+  <data name="ExportLabelEnglish" xml:space="preserve">
+    <value>Export to Excel</value>
+  </data>
+  <data name="ExportLabelFrench" xml:space="preserve">
+    <value>Exporter vers Excel</value>
+  </data>
+  <data name="ExportLabelSpanish" xml:space="preserve">
+    <value>Exportar a Excel</value>
+  </data>
+  <data name="CompletedAssessmentsLabelEnglish" xml:space="preserve">
+    <value>Completed assessments for</value>
+  </data>
+  <data name="CompletedAssessmentsLabelFrench" xml:space="preserve">
+    <value>Evaluation complète pour</value>
+  </data>
+  <data name="CompletedAssessmentsLabelSpanish" xml:space="preserve">
+    <value>Evaluaciones completadas para</value>
+  </data>
+  <data name="AllAssessorsLabelEnglish" xml:space="preserve">
+    <value>All assessors</value>
+  </data>
+  <data name="AllAssessorsLabelFrench" xml:space="preserve">
+    <value>Tous les évaluateurs</value>
+  </data>
+  <data name="AllAssessorsLabelSpanish" xml:space="preserve">
+    <value>Todos los evaluadores</value>
+  </data>
+  <data name="AssessmentsByUserReportLabelEnglish" xml:space="preserve">
+    <value>Assessments by</value>
+  </data>
+  <data name="AssessmentsByUserReportLabelFrench" xml:space="preserve">
+    <value>Évaluations par </value>
+  </data>
+  <data name="AssessmentsByUserReportLabelSpanish" xml:space="preserve">
+    <value>Evaluaciones realizadas por</value>
+  </data>
+  <data name="FALabelEnglish" xml:space="preserve">
+    <value>Facilitators and Assessors</value>
+  </data>
+  <data name="FALabelFrench" xml:space="preserve">
+    <value>Facilitateurs et Evaluateurs</value>
+  </data>
+  <data name="FALabelSpanish" xml:space="preserve">
+    <value>Asesores y facilitadores</value>
+  </data>
+  <data name="AssessmentResultsLabelEnglish" xml:space="preserve">
+    <value>Conservation Needs Assessment</value>
+  </data>
+  <data name="AssessmentResultsLabelFrench" xml:space="preserve">
+    <value>Évaluations des Besoins de Conservation</value>
+  </data>
+  <data name="AssessmentResultsLabelSpanish" xml:space="preserve">
+    <value>Evaluación de las Necesidades de Conservación</value>
+  </data>
+  <data name="ChangePasswordContentEnglish" xml:space="preserve">
+    <value>Forget your password? Please enter your username and new password to change your password and login to the system.</value>
+  </data>
+  <data name="ChangePasswordContentFrench" xml:space="preserve">
+    <value>Mot de passe oublié? Entrez votre nom d'utilisateur et nouveau mot de passe pour changer votre mot de passe et identifiez-vous dans le système.</value>
+  </data>
+  <data name="ChangePasswordContentSpanish" xml:space="preserve">
+    <value>¿Olvidaste tu contraseña? Introduce tu nombre de usuario y contraseña nueva para cambiar tu contraseña y entrar al sistema.</value>
+  </data>
+  <data name="ChangePasswordLabelEnglish" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ChangePasswordLabelFrench" xml:space="preserve">
+    <value>Changer votre mot de passe</value>
+  </data>
+  <data name="ChangePasswordLabelSpanish" xml:space="preserve">
+    <value>Cambiar la Contraseña</value>
+  </data>
+  <data name="PasswordEmailSentEnglish" xml:space="preserve">
+    <value>An email with your password has been sent to you. Please contact the system administrator if you do not receive this email.</value>
+  </data>
+  <data name="PasswordEmailSentFrench" xml:space="preserve">
+    <value>Un courriel avec votre mot de passe vous a été envoyé. Contactez votre administrateur système si vous ne recevez pas ce courriel.</value>
+  </data>
+  <data name="PasswordEmailSentSpanish" xml:space="preserve">
+    <value>Se te envió un correo electrónico con tu contraseña. Por favor, ponte en contacto con el administrador del sistema si no recibes este correo electrónico.</value>
+  </data>
+  <data name="UsernameNotFoundEnglish" xml:space="preserve">
+    <value>Username is not found. Please enter your username. If you do not remember your username, please contact the system administrator.</value>
+  </data>
+  <data name="UsernameNotFoundFrench" xml:space="preserve">
+    <value>Le nom d'utilisateur n'est pas reconnu. Veuillez saisir votre nom d'utilisateur. Si vous ne vous souvenez pas de votre nom d'utilisateur, veuillez contacter votre administrateur système.</value>
+  </data>
+  <data name="UsernameNotFoundSpanish" xml:space="preserve">
+    <value>El nombre de usuario no se encuentra. Introduce tu nombre de usuario. Si no recuerdas tu nombre de usuario, por favor ponte en contacto con el administrador del sistema.</value>
+  </data>
+  <data name="AssessInstructionsEnglish" xml:space="preserve">
+    <value>Answer all the questions by clicking on the green section headings below.</value>
+  </data>
+  <data name="AssessInstructionsFrench" xml:space="preserve">
+    <value>Répondre aux questions en cliquant sur les en-têtes verts ci-dessous.</value>
+  </data>
+  <data name="AssessInstructionsSpanish" xml:space="preserve">
+    <value>Contesta todas las preguntas haciendo clic en los encabezados (verdes) de sección abajo.</value>
+  </data>
+  <data name="AllRecsLabelEnglish" xml:space="preserve">
+    <value>All Recommendations</value>
+  </data>
+  <data name="AllRecsLabelFrench" xml:space="preserve">
+    <value>Toutes les recommandations</value>
+  </data>
+  <data name="AllRecsLabelSpanish" xml:space="preserve">
+    <value>Todas las Recomendaciones</value>
+  </data>
+  <data name="AssessorsLabelEnglish" xml:space="preserve">
+    <value>Assessors</value>
+  </data>
+  <data name="AssessorsLabelFrench" xml:space="preserve">
+    <value>Evaluateur</value>
+  </data>
+  <data name="AssessorsLabelSpanish" xml:space="preserve">
+    <value>Asesores</value>
+  </data>
+  <data name="FacilitatorsLabelEnglish" xml:space="preserve">
+    <value>Facilitators</value>
+  </data>
+  <data name="FacilitatorsLabelFrench" xml:space="preserve">
+    <value>Facilitateur</value>
+  </data>
+  <data name="FacilitatorsLabelSpanish" xml:space="preserve">
+    <value>Facilitadores</value>
+  </data>
+  <data name="ConsolidatedAssessmentTitleEnglish" xml:space="preserve">
+    <value>Consolidated Conservation Needs Assessment</value>
+  </data>
+  <data name="ConsolidatedAssessmentTitleFrench" xml:space="preserve">
+    <value>Evaluation des Besoins de Conservation Consolidées</value>
+  </data>
+  <data name="ConsolidatedAssessmentTitleSpanish" xml:space="preserve">
+    <value>Conservación Consolidado Evaluación de las Necesidades</value>
+  </data>
+  <data name="ConsolidatedResponseLabelEnglish" xml:space="preserve">
+    <value>Response (Certainty)</value>
+  </data>
+  <data name="ConsolidatedResponseLabelFrench" xml:space="preserve">
+    <value>Réponse (Certitude)</value>
+  </data>
+  <data name="ConsolidatedResponseLabelSpanish" xml:space="preserve">
+    <value>Respuesta (Certeza)</value>
+  </data>
+  <data name="AssessmentsLabelEnglish" xml:space="preserve">
+    <value>Assessments for</value>
+  </data>
+  <data name="AssessmentsLabelFrench" xml:space="preserve">
+    <value>Evaluations pour</value>
+  </data>
+  <data name="AssessmentsLabelSpanish" xml:space="preserve">
+    <value>Evaluaciones completadas para</value>
+  </data>
+  <data name="ConsolidatedAssessmentLinkEnglish" xml:space="preserve">
+    <value>Consolidated Assessment</value>
+  </data>
+  <data name="ConsolidatedAssessmentLinkFrench" xml:space="preserve">
+    <value>Evaluation Consolidée</value>
+  </data>
+  <data name="ConsolidatedAssessmentLinkSpanish" xml:space="preserve">
+    <value>Evaluación de las Necesidades de Conservación Consolidada</value>
+  </data>
+  <data name="RecommendedConservationActionsEnglish" xml:space="preserve">
+    <value>Recommended Conservation Actions:</value>
+  </data>
+  <data name="RecommendedConservationActionsFrench" xml:space="preserve">
+    <value>Actions de Conservations Recommandées</value>
+  </data>
+  <data name="RecommendedConservationActionsSpanish" xml:space="preserve">
+    <value>Acciones Nacionales Recomendadas:</value>
+  </data>
+  <data name="ConsolidatedHeaderEnglish" xml:space="preserve">
+    <value>Consolidated</value>
+  </data>
+  <data name="ConsolidatedHeaderFrench" xml:space="preserve">
+    <value>Consolidée</value>
+  </data>
+  <data name="ConsolidatedHeaderSpanish" xml:space="preserve">
+    <value>Consolidada</value>
+  </data>
+  <data name="AssessmentStatusLabelFrench" xml:space="preserve">
+    <value>État de l'évaluation:</value>
+  </data>
+  <data name="AWebLabelEnglish" xml:space="preserve">
+    <value>AmphibiaWeb species account</value>
+  </data>
+  <data name="AWebLabelFrench" xml:space="preserve">
+    <value>Compte espèces AmphibiaWeb</value>
+  </data>
+  <data name="AWebLabelSpanish" xml:space="preserve">
+    <value>Listado de Especies de AmphibiaWeb</value>
+  </data>
+  <data name="AssessmentsDDLValue1English" xml:space="preserve">
+    <value>All species</value>
+  </data>
+  <data name="AssessmentsDDLValue1French" xml:space="preserve">
+    <value>Toutes les espèces</value>
+  </data>
+  <data name="AssessmentsDDLValue1Spanish" xml:space="preserve">
+    <value>Todas las especies</value>
+  </data>
+  <data name="AssessmentsDDLValue2English" xml:space="preserve">
+    <value>Species with assessments</value>
+  </data>
+  <data name="AssessmentsDDLValue2French" xml:space="preserve">
+    <value>Espèces avec évaluations</value>
+  </data>
+  <data name="AssessmentsDDLValue2Spanish" xml:space="preserve">
+    <value>Especies con evaluaciones</value>
+  </data>
+  <data name="AssessmentsDDLValue3English" xml:space="preserve">
+    <value>Species without assessments</value>
+  </data>
+  <data name="AssessmentsDDLValue3French" xml:space="preserve">
+    <value>Espèces sans évaluation</value>
+  </data>
+  <data name="AssessmentsDDLValue3Spanish" xml:space="preserve">
+    <value>Especies sin evaluaciones</value>
+  </data>
+  <data name="IncludeAssessLabelEnglish" xml:space="preserve">
+    <value>Including</value>
+  </data>
+  <data name="IncludeAssessLabelFrench" xml:space="preserve">
+    <value>Incluant</value>
+  </data>
+  <data name="IncludeAssessLabelSpanish" xml:space="preserve">
+    <value>Incluyendo</value>
+  </data>
+  <data name="Q19LabelTextEnglish" xml:space="preserve">
+    <value>Research into availability of founders needs to be prioritised.</value>
+  </data>
+  <data name="Q19LabelTextFrench" xml:space="preserve">
+    <value>La recherche sur la disponibilité des fondateurs doit être prioritaire.</value>
+  </data>
+  <data name="Q19LabelTextSpanish" xml:space="preserve">
+    <value>Es necesario dar prioridad a investigaciones acerca de la disponibilidad de fundadores.</value>
+  </data>
+  <data name="Q20LabelTextEnglish" xml:space="preserve">
+    <value>Research into species validity needs to be prioritised.</value>
+  </data>
+  <data name="Q20LabelTextFrench" xml:space="preserve">
+    <value>La recherche sur la validité de cette espèce a besoin d'être priorisée.</value>
+  </data>
+  <data name="Q20LabelTextSpanish" xml:space="preserve">
+    <value>Debe darse prioridad a investigar la autenticidad de las especie.</value>
+  </data>
+  <data name="ArchiveMessageEnglish" xml:space="preserve">
+    <value>Assessment has been archived.</value>
+  </data>
+  <data name="ArchiveMessageFrench" xml:space="preserve">
+    <value>L'évaluation a été archivée</value>
+  </data>
+  <data name="ArchiveMessageSpanish" xml:space="preserve">
+    <value>La evaluación ha sido archivada.</value>
+  </data>
+  <data name="ArchiveTextEnglish" xml:space="preserve">
+    <value>Archived</value>
+  </data>
+  <data name="ArchiveTextFrench" xml:space="preserve">
+    <value>Archivée</value>
+  </data>
+  <data name="ArchiveTextSpanish" xml:space="preserve">
+    <value>Archivo</value>
+  </data>
+  <data name="ConfirmArchiveEnglish" xml:space="preserve">
+    <value>Are you sure you want to archive this assessment?</value>
+  </data>
+  <data name="ConfirmArchiveFrench" xml:space="preserve">
+    <value>Etes-vous sûr de vouloir archiver cette évaluation?</value>
+  </data>
+  <data name="ConfirmArchiveSpanish" xml:space="preserve">
+    <value>¿Está seguro de que desea archivar esta evaluación?</value>
+  </data>
+  <data name="ConfirmUnarchiveEnglish" xml:space="preserve">
+    <value>Are you sure you want to remove Archive status for this assessment?</value>
+  </data>
+  <data name="ConfirmUnarchiveFrench" xml:space="preserve">
+    <value>Etes-vous sûr de vouloir supprimer cette archive?</value>
+  </data>
+  <data name="ConfirmUnarchiveSpanish" xml:space="preserve">
+    <value>¿Seguro que desea eliminar el estado del archivo para esta evaluación?</value>
+  </data>
+  <data name="EditTextEnglish" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="EditTextFrench" xml:space="preserve">
+    <value>Éditer</value>
+  </data>
+  <data name="EditTextSpanish" xml:space="preserve">
+    <value>Editar</value>
+  </data>
+  <data name="UnarchiveMessageEnglish" xml:space="preserve">
+    <value>Archived status has been removed for assessment.</value>
+  </data>
+  <data name="UnarchiveMessageSpanish" xml:space="preserve">
+    <value>Se ha eliminado el estado archivado para su evaluación.</value>
+  </data>
+  <data name="ArchivedStatusEnglish" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ArchivedStatusFrench" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="ArchivedStatusSpanish" xml:space="preserve">
+    <value>Estado</value>
+  </data>
+  <data name="CaptiveBreedingLabelEnglish" xml:space="preserve">
+    <value>Captive Breeding</value>
+  </data>
+  <data name="CaptiveBreedingLabelFrench" xml:space="preserve">
+    <value>Elevage en captivité</value>
+  </data>
+  <data name="CaptiveBreedingLabelSpanish" xml:space="preserve">
+    <value>Cría en Cautividad</value>
+  </data>
+  <data name="DateLabelEnglish" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DateLabelFrench" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="DateLabelSpanish" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="FoundersAvailLabelEnglish" xml:space="preserve">
+    <value>Founders available</value>
+  </data>
+  <data name="FoundersAvailLabelFrench" xml:space="preserve">
+    <value>Fondateurs disponibles</value>
+  </data>
+  <data name="FoundersAvailLabelSpanish" xml:space="preserve">
+    <value>Fundadores disponibles</value>
+  </data>
+  <data name="HabitatReintroAvailEnglish" xml:space="preserve">
+    <value>Habitat for reintroduction available</value>
+  </data>
+  <data name="HabitatReintroAvailFrench" xml:space="preserve">
+    <value>Habitat de réintroduction disponible</value>
+  </data>
+  <data name="HabitatReintroAvailSpanish" xml:space="preserve">
+    <value>Hábitat para reintroducción disponible</value>
+  </data>
+  <data name="RecommendationsLabelEnglish" xml:space="preserve">
+    <value>recommendations for</value>
+  </data>
+  <data name="RecommendationsLabelFrench" xml:space="preserve">
+    <value>recommandations pour</value>
+  </data>
+  <data name="RecommendationsLabelSpanish" xml:space="preserve">
+    <value>recomendaciones para</value>
+  </data>
+  <data name="SpeciesRecommendRescueInfoEnglish" xml:space="preserve">
+    <value>This report shows species recommended for Ex Situ Rescue</value>
+  </data>
+  <data name="SpeciesRecommendRescueInfoFrench" xml:space="preserve">
+    <value>Ce rapport montre les espèces pour lesquelles un Sauvetage Ex Situ est recommandé.</value>
+  </data>
+  <data name="SpeciesRecommendRescueInfoSpanish" xml:space="preserve">
+    <value>Este informe muestra las especies recomendadas para el rescate ex situ</value>
+  </data>
+  <data name="SpeciesRecommendRescueTitleEnglish" xml:space="preserve">
+    <value>Species Recommended for Ex Situ Rescue</value>
+  </data>
+  <data name="SpeciesRecommendRescueTitleFrench" xml:space="preserve">
+    <value>Espèces recommandées pour un Sauvetage Ex Situ</value>
+  </data>
+  <data name="SpeciesRecommendRescueTitleSpanish" xml:space="preserve">
+    <value>Especies Recomendadas para el Rescate de la Ex Situ</value>
+  </data>
+  <data name="TaxonAnalysisCompleteEnglish" xml:space="preserve">
+    <value>Taxonomic analysis complete</value>
+  </data>
+  <data name="TaxonAnalysisCompleteFrench" xml:space="preserve">
+    <value>Analyse taxonomique complète</value>
+  </data>
+  <data name="TaxonAnalysisCompleteSpanish" xml:space="preserve">
+    <value>Análisis de la taxonomíco completo</value>
+  </data>
+  <data name="ApproveTextFrench" xml:space="preserve">
+    <value>Approuver</value>
+  </data>
+  <data name="AssessmentSearchAllNewFrench" xml:space="preserve">
+    <value>Ajouter les Evaluations</value>
+  </data>
+  <data name="AssessmentSearchNewFrench" xml:space="preserve">
+    <value>Voir les Evaluations</value>
+  </data>
+  <data name="DeleteTextFrench" xml:space="preserve">
+    <value>Effacer</value>
+  </data>
+  <data name="DenyTextFrench" xml:space="preserve">
+    <value>Nier</value>
+  </data>
+  <data name="EditIncompleteAssessmentLabelFrench" xml:space="preserve">
+    <value>Compléter l'évaluation</value>
+  </data>
+  <data name="LoginLabelFrench" xml:space="preserve">
+    <value>S'identifier</value>
+  </data>
+  <data name="NotApprovedLabelFrench" xml:space="preserve">
+    <value>Non approuvé</value>
+  </data>
+  <data name="AssessedByFrenchLabel" xml:space="preserve">
+    <value>Évalué par</value>
+  </data>
+  <data name="EditUserProfileLabelFrench" xml:space="preserve">
+    <value>Modifier Mon Profil</value>
+  </data>
+  <data name="LocalCommonNameLabelFrench" xml:space="preserve">
+    <value>Nom Commun Local</value>
+  </data>
+  <data name="ApprovedLabelFrench" xml:space="preserve">
+    <value>Approuvé</value>
+  </data>
+  <data name="UnapproveLabelFrench" xml:space="preserve">
+    <value>Désapprouver</value>
+  </data>
+  <data name="RecLabelEnglish" xml:space="preserve">
+    <value>recommendation(s)</value>
+  </data>
+  <data name="RecLabelFrench" xml:space="preserve">
+    <value>recommandation(s)</value>
+  </data>
+  <data name="RecLabelSpanish" xml:space="preserve">
+    <value>recommendacione(s)</value>
+  </data>
+  <data name="DefaultContentTextFrench" xml:space="preserve">
+    <value>Les ressources de conservation sont limitées et, avec des milliers d'espèces menacées qui ont besoin d'aide, le processus d'évaluation des besoins de conservation vise à identifier objectivement et systématiquement les espèces prioritaires et leurs besoins immédiats de conservation.</value>
+  </data>
+  <data name="TopRightHomeContentFrench" xml:space="preserve">
+    <value>Les scientifiques, les biologistes de terrain, les experts en élevage d'animales et d'autres sont vitaux pour le succès des évaluations des besoins de conservation. Le partage de votre expertise et de vos expériences renforcera nos évaluations et veillera à ce que les mesures de conservation soient prises là où elles sont le plus nécessaires.</value>
+  </data>
+  <data name="TopRightHomeTitleFrench" xml:space="preserve">
+    <value>Voulez-vous devenir un évaluateur?</value>
+  </data>
+</root>

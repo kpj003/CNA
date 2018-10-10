@@ -1,0 +1,578 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{603A0CE5-782F-44EC-9F7F-4455DA4AF580}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AArk</RootNamespace>
+    <AssemblyName>AArk</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="ApprovedUsers.aspx" />
+    <Content Include="ConsolidatedSpeciesAssessment.aspx" />
+    <Content Include="Help\EN\ACAP.jpg" />
+    <Content Include="Help\EN\Acknowledgements.htm" />
+    <Content Include="Help\EN\AddAssessmentGrid.jpg" />
+    <Content Include="Help\EN\AddAssessmentGrid650.jpg" />
+    <Content Include="Help\EN\ApprovingAssessments.htm" />
+    <Content Include="Help\EN\ARKive logo.jpeg" />
+    <Content Include="Help\EN\ARKive160.jpg" />
+    <Content Include="Help\EN\AssessorDashboard.htm" />
+    <Content Include="Help\EN\AssessorDashboard.jpg" />
+    <Content Include="Help\EN\AssessorDashboard660.jpg" />
+    <Content Include="Help\EN\Assessors.htm" />
+    <Content Include="Help\EN\AZA rgb.jpg" />
+    <Content Include="Help\EN\AZA160.jpg" />
+    <Content Include="Help\EN\CompleteAndSave.jpg" />
+    <Content Include="Help\EN\CompleteMyAssessments.htm" />
+    <Content Include="Help\EN\ConservationActions.htm" />
+    <Content Include="Help\EN\ContactUs.htm" />
+    <Content Include="Help\EN\EAZA.jpg" />
+    <Content Include="Help\EN\EAZA160.jpg" />
+    <Content Include="Help\EN\EditingMyAssessments.htm" />
+    <Content Include="Help\EN\FacilitatorDashboard.htm" />
+    <Content Include="Help\EN\FacilitatorDashboard.jpg" />
+    <Content Include="Help\EN\FacilitatorDashboard660.jpg" />
+    <Content Include="Help\EN\FindingAssessmentsAssessors.htm" />
+    <Content Include="Help\EN\FindingAssessmentsUsers.htm" />
+    <Content Include="Help\EN\HelpTopics %28orifinal format%29.htm" />
+    <Content Include="Help\EN\HelpTopics2.htm" />
+    <Content Include="Help\EN\IncompleteAssessments.jpg" />
+    <Content Include="Help\EN\IncompleteAssessments650.jpg" />
+    <Content Include="Help\EN\IUCNRedList.htm" />
+    <Content Include="Help\EN\MoreInformation.htm" />
+    <Content Include="Help\EN\NationalFacilitators.htm" />
+    <Content Include="Help\EN\NationalRedList.htm" />
+    <Content Include="Help\EN\NotInTheRedList.htm" />
+    <Content Include="Help\EN\Paris Zoo 160.jpg" />
+    <Content Include="Help\EN\Paris Zoo logo.jpg" />
+    <Content Include="Help\EN\PlanningAnAssessment.htm" />
+    <Content Include="Help\EN\QuestionsAnswers.htm" />
+    <Content Include="Help\EN\RecentAssessments.htm" />
+    <Content Include="Help\EN\Recommended-conservation-actions.jpg" />
+    <Content Include="Help\EN\SpeciesWithoutAssessments.htm" />
+    <Content Include="Help\EN\TaxonomicChanges.htm" />
+    <Content Include="Help\EN\TaxonomicReferences.htm" />
+    <Content Include="Help\EN\ViewingAssessmentsAssessors.htm" />
+    <Content Include="Help\EN\ViewingAssessmentsUsers.htm" />
+    <Content Include="Help\EN\WhatHappensNext.htm" />
+    <Content Include="Help\EN\WhatIsAArk.htm" />
+    <Content Include="Help\EN\WhatIsTheACAP.htm" />
+    <Content Include="Help\EN\ZAA-Logo-Colour-large.jpg" />
+    <Content Include="Help\EN\ZAA160.jpg" />
+    <Content Include="SpeciesRecommendRescue.aspx" />
+    <Content Include="NationalAssessmentReport.aspx" />
+    <Content Include="AssessmentsByUser.aspx" />
+    <Content Include="FacilitatorDashboard.aspx" />
+    <Content Include="AssessorDashboard.aspx" />
+    <Content Include="AssessmentOverviewTABS.aspx" />
+    <Content Include="AssessmentOverview.aspx" />
+    <Content Include="AssessmentQuestions.aspx" />
+    <Content Include="AssessmentResults.aspx" />
+    <Content Include="AssessmentSearch.aspx" />
+    <Content Include="Help.aspx" />
+    <Content Include="HelpMenu.ascx" />
+    <Content Include="Help\EN\Background.htm" />
+    <Content Include="Help\EN\CNA bottom banner EN.png" />
+    <Content Include="Help\EN\CNA top banner EN.png" />
+    <Content Include="Help\EN\Help template.htm" />
+    <Content Include="Help\EN\Help.htm" />
+    <Content Include="Help\EN\HelpTopics.htm" />
+    <Content Include="Help\EN\SpeciesAssessments.htm" />
+    <Content Include="Help\ES\CNA bottom banner ES.png" />
+    <Content Include="Help\ES\CNA top banner ES.png" />
+    <Content Include="Help\ES\Help.htm" />
+    <Content Include="Help\ES\HelpTopics.htm" />
+    <Content Include="images\CNA bottom banner FR.png" />
+    <Content Include="images\CNA top banner FR.png" />
+    <Content Include="images\French flag.png" />
+    <Content Include="images\No map data EN.jpg" />
+    <Content Include="images\No map data ES.jpg" />
+    <Content Include="images\No map data FR.png" />
+    <Content Include="images\Question_mark 25 px.png" />
+    <Content Include="images\world map_bw FR.jpg" />
+    <Content Include="MyDashboard.aspx" />
+    <Content Include="ReportsMain.aspx" />
+    <Content Include="ReportViewer.aspx" />
+    <Content Include="Scripts\jquery-1.5.js" />
+    <Content Include="Scripts\MasterPageWS.asmx" />
+    <Content Include="Scripts\MasterPageWSJS.js" />
+    <Content Include="SearchAll.aspx" />
+    <Content Include="AssessorInfo.aspx" />
+    <Content Include="ContactUs.aspx" />
+    <Content Include="EditAssessment.aspx" />
+    <Content Include="CreateAssessment.aspx" />
+    <Content Include="ChangePassword.aspx" />
+    <Content Include="images\AArk logo %28for ACNA pages%29.jpg" />
+    <Content Include="images\AArk Logo %28vector%29.png" />
+    <Content Include="images\AArk logo %28vertical, small%29.jpg" />
+    <Content Include="images\AddObservationMap.png" />
+    <Content Include="images\CNA bottom banner EN.png" />
+    <Content Include="images\CNA bottom banner.png" />
+    <Content Include="images\CNA top banner EN.png" />
+    <Content Include="images\CNA top banner ES.png" />
+    <Content Include="images\CNA top banner.png" />
+    <Content Include="images\conservation needs assessment.jpg" />
+    <Content Include="images\English flag.png" />
+    <Content Include="images\map.jpg" />
+    <Content Include="images\map2.jpg" />
+    <Content Include="images\RedListMap.png" />
+    <Content Include="images\Spanish flag.png" />
+    <Content Include="images\treefrog.jpg" />
+    <Content Include="images\world map_bw EN.jpg" />
+    <Content Include="images\world map_bw ES.jpg" />
+    <Content Include="Languages.aspx" />
+    <Content Include="Login.aspx" />
+    <Content Include="Questions.aspx" />
+    <Content Include="Scripts\arkive-api-embed.js" />
+    <Content Include="EditUser.aspx" />
+    <Content Include="Signup.aspx" />
+    <Content Include="Species.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Styles\StyleSheetMain.css" />
+    <Content Include="Triggers.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="AdminDashboard.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AArkDataSet.cs">
+      <DependentUpon>AArkDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AArkDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AArkDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ApprovedUsers.aspx.cs">
+      <DependentUpon>ApprovedUsers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ApprovedUsers.aspx.designer.cs">
+      <DependentUpon>ApprovedUsers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\Strings.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ConsolidatedSpeciesAssessment.aspx.cs">
+      <DependentUpon>ConsolidatedSpeciesAssessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsolidatedSpeciesAssessment.aspx.designer.cs">
+      <DependentUpon>ConsolidatedSpeciesAssessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SpeciesRecommendRescue.aspx.cs">
+      <DependentUpon>SpeciesRecommendRescue.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SpeciesRecommendRescue.aspx.designer.cs">
+      <DependentUpon>SpeciesRecommendRescue.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NationalAssessmentReport.aspx.cs">
+      <DependentUpon>NationalAssessmentReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NationalAssessmentReport.aspx.designer.cs">
+      <DependentUpon>NationalAssessmentReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentsByUser.aspx.cs">
+      <DependentUpon>AssessmentsByUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssessmentsByUser.aspx.designer.cs">
+      <DependentUpon>AssessmentsByUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dsAssessQA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsAssessQA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsQA.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsQA.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FacilitatorDashboard.aspx.cs">
+      <DependentUpon>FacilitatorDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacilitatorDashboard.aspx.designer.cs">
+      <DependentUpon>FacilitatorDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorDashboard.aspx.cs">
+      <DependentUpon>AssessorDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssessorDashboard.aspx.designer.cs">
+      <DependentUpon>AssessorDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_GlobalResources\MYStrings.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MYStrings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentOverviewTABS.aspx.cs">
+      <DependentUpon>AssessmentOverviewTABS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssessmentOverviewTABS.aspx.designer.cs">
+      <DependentUpon>AssessmentOverviewTABS.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentOverview.aspx.cs">
+      <DependentUpon>AssessmentOverview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssessmentOverview.aspx.designer.cs">
+      <DependentUpon>AssessmentOverview.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentQuestions.aspx.cs">
+      <DependentUpon>AssessmentQuestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssessmentQuestions.aspx.designer.cs">
+      <DependentUpon>AssessmentQuestions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentResults.aspx.cs">
+      <DependentUpon>AssessmentResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssessmentResults.aspx.designer.cs">
+      <DependentUpon>AssessmentResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssessmentSearch.aspx.cs">
+      <DependentUpon>AssessmentSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssessmentSearch.aspx.designer.cs">
+      <DependentUpon>AssessmentSearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Help.aspx.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Help.aspx.designer.cs">
+      <DependentUpon>Help.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HelpMenu.ascx.cs">
+      <DependentUpon>HelpMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HelpMenu.ascx.designer.cs">
+      <DependentUpon>HelpMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDashboard.aspx.cs">
+      <DependentUpon>MyDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MyDashboard.aspx.designer.cs">
+      <DependentUpon>MyDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportsMain.aspx.cs">
+      <DependentUpon>ReportsMain.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportsMain.aspx.designer.cs">
+      <DependentUpon>ReportsMain.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportViewer.aspx.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportViewer.aspx.designer.cs">
+      <DependentUpon>ReportViewer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scripts\MasterPageWS.asmx.cs">
+      <DependentUpon>MasterPageWS.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SearchAll.aspx.cs">
+      <DependentUpon>SearchAll.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SearchAll.aspx.designer.cs">
+      <DependentUpon>SearchAll.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AssessorInfo.aspx.cs">
+      <DependentUpon>AssessorInfo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AssessorInfo.aspx.designer.cs">
+      <DependentUpon>AssessorInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Code_Files\DataProxy.cs" />
+    <Compile Include="Code_Files\Settings.cs" />
+    <Compile Include="ContactUs.aspx.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ContactUs.aspx.designer.cs">
+      <DependentUpon>ContactUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditAssessment.aspx.cs">
+      <DependentUpon>EditAssessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditAssessment.aspx.designer.cs">
+      <DependentUpon>EditAssessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAssessment.aspx.cs">
+      <DependentUpon>CreateAssessment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CreateAssessment.aspx.designer.cs">
+      <DependentUpon>CreateAssessment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Languages.aspx.cs">
+      <DependentUpon>Languages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Languages.aspx.designer.cs">
+      <DependentUpon>Languages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Questions.aspx.cs">
+      <DependentUpon>Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Questions.aspx.designer.cs">
+      <DependentUpon>Questions.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.aspx.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EditUser.aspx.designer.cs">
+      <DependentUpon>EditUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Signup.aspx.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Signup.aspx.designer.cs">
+      <DependentUpon>Signup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="AdminDashboard.aspx.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminDashboard.aspx.designer.cs">
+      <DependentUpon>AdminDashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Species.aspx.cs">
+      <DependentUpon>Species.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Species.aspx.designer.cs">
+      <DependentUpon>Species.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Triggers.aspx.cs">
+      <DependentUpon>Triggers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Triggers.aspx.designer.cs">
+      <DependentUpon>Triggers.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="MessagesSent\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\MYStrings.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>MYStrings.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_GlobalResources\Strings.resx">
+      <Generator>GlobalResourceProxyGenerator</Generator>
+      <LastGenOutput>Strings.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+    <EmbeddedResource Include="Assessment.rdlc" />
+    <EmbeddedResource Include="subQA.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AArkDataSet.xsc">
+      <DependentUpon>AArkDataSet.xsd</DependentUpon>
+    </Content>
+    <None Include="AArkDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AArkDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="AArkDataSet.xss">
+      <DependentUpon>AArkDataSet.xsd</DependentUpon>
+    </Content>
+    <Content Include="dsQA.xsc">
+      <DependentUpon>dsQA.xsd</DependentUpon>
+    </Content>
+    <Content Include="dsAssessQA.xsc">
+      <DependentUpon>dsAssessQA.xsd</DependentUpon>
+    </Content>
+    <None Include="dsAssessQA.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsAssessQA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="dsAssessQA.xss">
+      <DependentUpon>dsAssessQA.xsd</DependentUpon>
+    </Content>
+    <None Include="dsQA.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsQA.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="dsQA.xss">
+      <DependentUpon>dsQA.xsd</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49447</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

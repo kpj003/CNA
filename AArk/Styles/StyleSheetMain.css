@@ -1,0 +1,173 @@
+body
+{}
+
+.WorkTable 
+{
+	border:1;
+	height:600px;
+	width: 980px;
+}
+.Initial
+  {
+    text-align: center;
+    background-color: green;
+    font-family: Arial;
+    font-size: 12px;
+    padding: 2px 16px 2px 16px;
+    /*background: url("../Images/InitialImage.png") no-repeat right top;*/
+    color: black;
+    font-weight: bold;
+    white-space: normal;
+  }
+  .Initial:hover
+  {
+    color: White;
+    /*background: url("../Images/SelectedButton.png") no-repeat right top;*/
+  }
+.Clicked {
+    display: block;
+    text-align: center;  
+    font-family: Arial;
+    font-size: 12px;
+    /*background: url("../Images/SelectedButton.png") no-repeat right top;*/
+    background-color:darkgreen;
+    padding: 2px 16px 2px 16px;
+    color: Black;
+    font-weight: bold;
+    color: White;
+    white-space: normal;
+}
+.menubaruser
+        {
+			font-size: 14px;
+			font-family: Verdana;        
+			outline-color:White;
+			border-bottom-width:thin;
+			background-color:Tan;/*rgb(115,115,90);BLUErgb(25,75,100);/*GREENrgb(95,120,80);/*TANrgb(241,235,210);*/
+			padding: 10px;
+			width: 99%;      
+			color:White;         
+        }
+        
+.HomeRightSide
+{
+	width:45%;
+	/*border-top: double;
+	border-top-color: Gray;*/
+	font-size: 14px;
+	font-family: Georgia;  
+	color: Black;
+}
+.HomeDivider
+{
+	width:54%;
+	border-right: double;
+	/*border-top: double;*/
+	border-right-color: Gray;	
+	/*border-top-color: Gray;*/
+}
+.TotalRow 
+{
+	border-bottom-color: Black;
+	border-top-color: Black;
+    border-top: double;
+    border-bottom: double;
+    border-right: blank
+}
+
+.TextHeader
+		{
+			font-size: small;
+			font-weight:bold;
+			font-family: Arial;  
+			color: black;
+    text-align: left;
+}  
+		
+.TextPlain
+		{
+			font-size: 12px;
+			font-family: Arial;  
+			color: black;
+}    
+.TextParagraph
+		{
+			font-size: 12px;
+			font-family: Arial;  
+			color: black;
+}    
+
+.TextCopy
+		{
+			font-size: 6px;
+			font-family: Arial;  
+			color: black;
+}    
+	
+.TextHeaders
+		{
+			font-size: 14px;
+			font-family: Arial;  
+			color: black; 
+            font-weight:bold;
+		}
+
+.TextHome
+		{
+			font-size: 14px;
+			font-family: Arial;  
+			color: black;
+		}    
+.TextError
+		{
+			font-size: 12px;
+			font-family: Arial;  
+			color: Red;
+			font-weight:bold;
+		}
+.TextText
+		{
+			font-size: 12px;
+			font-family: Arial;  
+			color: Green;
+			font-weight:normal;
+		}
+.LinksText
+		{
+			font-size: 14px;
+			font-family: Arial;  
+			color: Green;
+			font-weight:bold;
+            text-decoration:none;
+		}
+.TextPrincipal
+		{
+			font-size: 14px;
+			font-family: Arial;  
+			background-color:White;/*rgb(115,115,90);/*BLUErgb(25,75,100);/*rgb(95,120,80);/*rgb(240,235,210); */
+			color: White;/*rgb(0,0,130);*/
+			font-weight:bold;
+		}
+		
+.TextFooter
+		{
+			font-size: 9px;
+			font-family: Arial;  
+			color: white;/*rgb(0,0,130);*/
+			font-weight:bold;
+		}     
+
+.TextRegular
+		{
+			font-size: 11px;
+			font-family: Arial;  
+			color: Black; 
+		}
+		
+.TextPrint
+		{
+			font-size: 12px;
+			font-family: Verdana;  
+			color: Black; 
+		}
+
