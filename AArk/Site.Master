@@ -1,41 +1,94 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="AArk.SiteMaster" %>
 
+<!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-
-
+<%--<html xmlns="http://www.w3.org/1999/xhtml">--%>
+<html>
 
 <head id="Head1" runat="server">
     <title>Amphibian Conservation Needs Assessments</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
     <link href="styles/StyleSheetMain.css" rel="stylesheet" type="text/css" />
 
     <meta content="AArk, amphibian, conservation, population, assessment, Amphibian Ark" name="description" />
     <meta content="AArk, amphibian, conservation, population, assessment, Amphibian Ark" name="keywords" />
-    <link rel="shortcut icon" href="cna-logo.ico" >
-        
+    <link rel="shortcut icon" href="cna-logo.ico">
+
     <style type="text/css">
-             .wrap { white-space: normal; }
+        .wrap {
+            white-space: normal;
+        }
     </style>
 
-    </head>
+</head>
 <body id="masterBody" runat="server">
-     
+
     <form id="form1" runat="server">
-      <%--  <asp:ScriptManager ID="ScriptManager" runat="server"
-         EnableScriptGlobalization="true"
-         LoadScriptsBeforeUI="true" 
-         EnableScriptLocalization="true" 
-         EnablePageMethods="true">
-         <Scripts>
-            <asp:ScriptReference Path="~/Javascript/MasterPageWSJS.js" /> 
-         </Scripts>
-         <Services>
-            <asp:ServiceReference Path="~/WebServices/MasterPageWS.asmx" />
-         </Services>
-        </asp:ScriptManager>--%>
+
+        <div class="container main-container">
+            <div class="row">
+                <div class="col">
+                    <%--<asp:Image ID="imgTop" runat="server"
+                        ImageUrl="images/CNA top banner EN.png" Style="width: 980px; height: 145px" />--%>
+                    <asp:Image ID="imgTop" runat="server"
+                        ImageUrl="images/CNA top banner EN.png" Style="width: 100%; height: 145px" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <br />
+                    <a style="text-decoration: none" id="lnkHome" runat="server" href="Default.aspx">
+                        <asp:Label CssClass="LinksText" runat="server" ID="lblHome"></asp:Label></a>
+                        &nbsp;&nbsp;<strong>|</strong>&nbsp;&nbsp;<a style="text-decoration: none" id="lnkSearch" runat="server" href="AssessmentSearch.aspx"><asp:Label CssClass="LinksText" runat="server" ID="lblSearch"></asp:Label></a>
+                        &nbsp;&nbsp;<strong>|</strong>&nbsp;&nbsp;<a style="text-decoration: none" id="lnkReports" runat="server" href="ReportsMain.aspx"><asp:Label CssClass="LinksText" runat="server" ID="lblReports"></asp:Label></a>
+                        &nbsp;&nbsp;<strong>|</strong>&nbsp;&nbsp;<a style="text-decoration: none" id="lnkLogin" runat="server" href="Login.aspx"><asp:Label CssClass="LinksText" runat="server" ID="lblLogin"></asp:Label></a>
+                        &nbsp;&nbsp;<strong>|</strong>&nbsp;&nbsp;<asp:HyperLink Style="text-decoration: none" CssClass="LinksText" ID="lnkHelp" Target="_blank" runat="server" />&nbsp;&nbsp;<strong><asp:Label runat="server" ID="lblPipe" Visible="false" Text="|"></asp:Label></strong>&nbsp;&nbsp;<a style="text-decoration: none" id="lnkAssessmentSearch" runat="server" href="SearchAll.aspx"><asp:Label CssClass="LinksText" runat="server" ID="lblAssessmentSearch"></asp:Label></a>
+                        &nbsp;&nbsp;<strong><asp:Label runat="server" ID="lblPipe2" Visible="false" Text="|"></asp:Label></strong>&nbsp;&nbsp;<a style="text-decoration: none" id="lnkDashboard" runat="server" href="MyDashboard.aspx"><asp:Label CssClass="LinksText" runat="server" ID="lblDashboard"></asp:Label></a>
+                    <br />
+                </div>
+                <div class="col-3">
+                    <br />
+                    <div class="float-right">
+                        <asp:ImageButton runat="server" ID="btnEnglish" ImageUrl="images/English%20flag.png" OnClick="btnEnglish_Click" />
+                        &nbsp;<asp:ImageButton runat="server" ID="btnSpanish" ImageUrl="images/Spanish%20flag.png" OnClick="btnSpanish_Click" />
+                        &nbsp;<asp:ImageButton runat="server" ID="btnFrench" ImageUrl="images/French%20flag.png" OnClick="btnFrench_Click" />
+                    </div>
+                    <br />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <asp:ContentPlaceHolder ID="cntApp" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <asp:Image id="imgBottom" runat="server"
+                                        ImageUrl="images/CNA bottom banner EN.png" style="width: 100%; height: 145px"/>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <div class="footer-links text-center" >
+                        <a class="LinksText" href="http://www.amphibianark.org">www.amphibianark.org</a>&nbsp; <strong>|</strong> 
+                        <a class="LinksText" href="https://www.facebook.com/AmphibianArk">Facebook</a>&nbsp; <strong>|</strong> 
+                        <a style="text-decoration:none" id="lnkContact" runat="server" href="ContactUs.aspx"></a>
+                        <asp:Label CssClass="LinksText" runat="server" ID="lblContactUs"></asp:Label>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
 
-        <div>
+
+        <%--<div>
             <table style="width:980px; align-self:center; align-items:center; align-content:center">
                 <tr>
                     <td>
@@ -65,20 +118,12 @@
                         </table></td>
                 </tr> 
                 <tr>
-                <!--<td>
-                    <table style="width:99%; border:solid;border-width:1px; border-color:green">
-                            <tr>
-                                <td style="width: 10px">
-                                    &nbsp;</td>-->
-                                <td style="text-align:center; width:980px">
-                                        <asp:ContentPlaceHolder ID="cntApp" runat="server">
-                                        </asp:ContentPlaceHolder>
-                                </td>
-                                <!--<td style="width: 10px">
-                                    &nbsp;</td>
-                            </tr>
-                    </table>
-                </td>  -->
+                
+                    <td style="text-align:center; width:980px">
+                            <asp:ContentPlaceHolder ID="cntApp" runat="server">
+                            </asp:ContentPlaceHolder>
+                    </td>
+
                 </tr>            
                 <tr><td>
                      <p><asp:Image id="imgBottom" runat="server"
@@ -93,9 +138,11 @@
                          <a style="text-decoration:none" id="lnkContact" runat="server" href="ContactUs.aspx">
                           <asp:Label CssClass="LinksText" runat="server" ID="lblContactUs"></asp:Label></a>
                      </p>
-                    </td></tr>           </table>
-        </div>
-        
+                    </td>
+                </tr>
+
+            </table>
+        </div>--%>
     </form>
 </body>
 </html>

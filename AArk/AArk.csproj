@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -13,7 +13,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>AArk</RootNamespace>
     <AssemblyName>AArk</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <UseIISExpress>false</UseIISExpress>
     <FileUpgradeFlags>
     </FileUpgradeFlags>
@@ -49,13 +49,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\ReportViewer.WebForms.12.0.2402.20\lib\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
@@ -94,7 +96,6 @@
     <Content Include="Help\EN\FacilitatorDashboard660.jpg" />
     <Content Include="Help\EN\FindingAssessmentsAssessors.htm" />
     <Content Include="Help\EN\FindingAssessmentsUsers.htm" />
-    <Content Include="Help\EN\HelpTopics %28orifinal format%29.htm" />
     <Content Include="Help\EN\HelpTopics2.htm" />
     <Content Include="Help\EN\IncompleteAssessments.jpg" />
     <Content Include="Help\EN\IncompleteAssessments650.jpg" />
@@ -154,7 +155,6 @@
     <Content Include="ReportsMain.aspx" />
     <Content Include="ReportViewer.aspx" />
     <Content Include="Scripts\jquery-1.5.js" />
-    <Content Include="Scripts\MasterPageWS.asmx" />
     <Content Include="Scripts\MasterPageWSJS.js" />
     <Content Include="SearchAll.aspx" />
     <Content Include="AssessorInfo.aspx" />
@@ -167,7 +167,6 @@
     <Content Include="images\AArk logo %28vertical, small%29.jpg" />
     <Content Include="images\AddObservationMap.png" />
     <Content Include="images\CNA bottom banner EN.png" />
-    <Content Include="images\CNA bottom banner.png" />
     <Content Include="images\CNA top banner EN.png" />
     <Content Include="images\CNA top banner ES.png" />
     <Content Include="images\CNA top banner.png" />
@@ -175,7 +174,6 @@
     <Content Include="images\English flag.png" />
     <Content Include="images\map.jpg" />
     <Content Include="images\map2.jpg" />
-    <Content Include="images\RedListMap.png" />
     <Content Include="images\Spanish flag.png" />
     <Content Include="images\treefrog.jpg" />
     <Content Include="images\world map_bw EN.jpg" />
@@ -234,6 +232,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Strings.resx</DependentUpon>
     </Compile>
+    <Compile Include="Code_Files\CustomMembershipProvider.cs" />
     <Compile Include="ConsolidatedSpeciesAssessment.aspx.cs">
       <DependentUpon>ConsolidatedSpeciesAssessment.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -360,10 +359,6 @@
     </Compile>
     <Compile Include="ReportViewer.aspx.designer.cs">
       <DependentUpon>ReportViewer.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Scripts\MasterPageWS.asmx.cs">
-      <DependentUpon>MasterPageWS.asmx</DependentUpon>
-      <SubType>Component</SubType>
     </Compile>
     <Compile Include="SearchAll.aspx.cs">
       <DependentUpon>SearchAll.aspx</DependentUpon>
@@ -525,6 +520,12 @@
     <Content Include="dsAssessQA.xsc">
       <DependentUpon>dsAssessQA.xsd</DependentUpon>
     </Content>
+    <Content Include="connections.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="appsettings.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="dsAssessQA.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>dsAssessQA.Designer.cs</LastGenOutput>
@@ -541,10 +542,25 @@
     <Content Include="dsQA.xss">
       <DependentUpon>dsQA.xsd</DependentUpon>
     </Content>
+    <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\cna-dev - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\cna-dev - Web Deploy.pubxml" />
+    <None Include="Web.dev.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'dev|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
@@ -553,12 +569,11 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>False</UseIIS>
+          <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>49447</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>
-          </IISUrl>
+          <IISUrl>http://localhost/cna</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

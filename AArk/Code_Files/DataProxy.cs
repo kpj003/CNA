@@ -19,7 +19,9 @@ namespace Data.Utilities {
     {
         //Search Results
         public const string GET_USER_INFO = " SELECT * FROM Users WHERE UserName = @UserName AND Password = @Password ";
-        
+
+        public const string GET_USER_INFO_USERNAME = " SELECT * FROM Users WHERE UserName = @UserName ";
+
         public const string GET_USER_INFO_ID = " SELECT * FROM Users WHERE UserID = @UserID ";
 
         public const string GET_ALL_USER_INFO = "SELECT C.CountryName, U.*, U.Approved AS Status " +
@@ -806,6 +808,15 @@ namespace Data.Utilities {
                     CreateSqlParameter("@UserName", strUserName, SqlDbType.VarChar),
                     CreateSqlParameter("@Password", strPassword, SqlDbType.VarChar));
         }
+
+        public static DataTable GetUserInfoUsername(string strUserName)
+        {
+            return GetDataTable(DatabaseQueries.GET_USER_INFO_USERNAME,
+                    false,
+                    CreateSqlParameter("@UserName", strUserName, SqlDbType.VarChar));
+        }
+
+
         public static DataTable GetAssessmentUsers()
         {
             return GetDataTable(DatabaseQueries.GET_ASSESSMENT_USERS,

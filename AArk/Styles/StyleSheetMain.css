@@ -1,5 +1,48 @@
-body
-{}
+
+body {
+    line-height: 1em;
+    font-family: 'Poppins', sans-serif, Arial;
+    background: #999;
+}
+
+.main-container {
+    width: 1010px;
+    box-shadow: 0px 0px 78px 3px rgba(0,0,0,0.7);
+    background: #FFF;
+    /*width: 980px;*/
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+
+input[type=submit], input[type=button] {
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
+
+
+
+
+
+
 
 .WorkTable 
 {
@@ -11,7 +54,7 @@ body
   {
     text-align: center;
     background-color: green;
-    font-family: Arial;
+    /*font-family: Arial;*/
     font-size: 12px;
     padding: 2px 16px 2px 16px;
     /*background: url("../Images/InitialImage.png") no-repeat right top;*/
@@ -27,7 +70,7 @@ body
 .Clicked {
     display: block;
     text-align: center;  
-    font-family: Arial;
+    /*font-family: Arial;*/
     font-size: 12px;
     /*background: url("../Images/SelectedButton.png") no-repeat right top;*/
     background-color:darkgreen;
@@ -40,7 +83,7 @@ body
 .menubaruser
         {
 			font-size: 14px;
-			font-family: Verdana;        
+			/*font-family: Verdana;*/        
 			outline-color:White;
 			border-bottom-width:thin;
 			background-color:Tan;/*rgb(115,115,90);BLUErgb(25,75,100);/*GREENrgb(95,120,80);/*TANrgb(241,235,210);*/
@@ -55,7 +98,7 @@ body
 	/*border-top: double;
 	border-top-color: Gray;*/
 	font-size: 14px;
-	font-family: Georgia;  
+	/*font-family: Georgia;*/  
 	color: Black;
 }
 .HomeDivider
@@ -79,7 +122,7 @@ body
 		{
 			font-size: small;
 			font-weight:bold;
-			font-family: Arial;  
+			/*font-family: Arial;*/  
 			color: black;
     text-align: left;
 }  
@@ -87,27 +130,27 @@ body
 .TextPlain
 		{
 			font-size: 12px;
-			font-family: Arial;  
+			/*font-family: Arial;*/  
 			color: black;
 }    
 .TextParagraph
 		{
 			font-size: 12px;
-			font-family: Arial;  
+			/*font-family: Arial;*/  
 			color: black;
 }    
 
 .TextCopy
 		{
 			font-size: 6px;
-			font-family: Arial;  
+			/*font-family: Arial;*/  
 			color: black;
 }    
 	
 .TextHeaders
 		{
 			font-size: 14px;
-			font-family: Arial;  
+			/*font-family: Arial;*/  
 			color: black; 
             font-weight:bold;
 		}
@@ -115,35 +158,41 @@ body
 .TextHome
 		{
 			font-size: 14px;
-			font-family: Arial;  
+			/*font-family: Arial;*/  
 			color: black;
 		}    
 .TextError
 		{
 			font-size: 12px;
-			font-family: Arial;  
+			/*font-family: Arial;*/  
 			color: Red;
 			font-weight:bold;
 		}
 .TextText
 		{
 			font-size: 12px;
-			font-family: Arial;  
+			/*font-family: Arial;*/  
 			color: Green;
 			font-weight:normal;
 		}
-.LinksText
-		{
-			font-size: 14px;
-			font-family: Arial;  
-			color: Green;
-			font-weight:bold;
-            text-decoration:none;
-		}
+
+.LinksText {
+    font-size: 14px;
+    color: Green;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+    .LinksText:hover {
+        color: #227fe3;
+        transition: all 0.5s;
+    }
+
 .TextPrincipal
 		{
 			font-size: 14px;
-			font-family: Arial;  
+			/*font-family: Arial;*/  
 			background-color:White;/*rgb(115,115,90);/*BLUErgb(25,75,100);/*rgb(95,120,80);/*rgb(240,235,210); */
 			color: White;/*rgb(0,0,130);*/
 			font-weight:bold;
@@ -152,7 +201,7 @@ body
 .TextFooter
 		{
 			font-size: 9px;
-			font-family: Arial;  
+			/*font-family: Arial;*/  
 			color: white;/*rgb(0,0,130);*/
 			font-weight:bold;
 		}     
@@ -160,14 +209,14 @@ body
 .TextRegular
 		{
 			font-size: 11px;
-			font-family: Arial;  
+			/*font-family: Arial;*/  
 			color: Black; 
 		}
 		
 .TextPrint
 		{
 			font-size: 12px;
-			font-family: Verdana;  
+			/*font-family: Verdana;*/  
 			color: Black; 
 		}
 
