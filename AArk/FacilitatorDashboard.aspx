@@ -28,7 +28,7 @@
              <p class="TextParagraph" style="text-align:left">  
             <asp:Panel runat="server" HorizontalAlign="Left" ID="Panel1"><br />  
             <asp:Label runat="server" CssClass="TextParagraph" ID="lblReportTitle" Visible="true" Font-Bold="true"></asp:Label><br /> <br />                 
-            <asp:GridView ID="grdApproveUser" runat="server" Visible="false" HeaderStyle-Font-Names="Arial" Font-Names="Arial" Font-Size="12px"  
+            <asp:GridView ID="grdApproveUser" runat="server" Visible="false" Font-Size="12px"  
                 AutoGenerateColumns="False" EnableViewState="true" CellPadding="3" CellSpacing="1" AllowPaging="true" PageSize="20"
                 PagerSettings-Mode="Numeric" EmptyDataText=""  OnPageIndexChanging="grdApproveUser_PageIndexChanging"  
                 OnRowDataBound="grdApproveUser_RowDataBound">
@@ -105,7 +105,7 @@
 
                  </Columns>
                 <PagerSettings PageButtonCount="20" />
-                <HeaderStyle BackColor="Green" ForeColor="White" Font-Names="Arial" />
+                <HeaderStyle BackColor="Green" ForeColor="White" />
 
             </asp:GridView>
              </asp:Panel></p>  </div><br />
@@ -154,7 +154,7 @@
              <p class="TextParagraph" style="text-align:left">
             <asp:Panel runat="server" HorizontalAlign="Left" ID="Panel2"><br />  
             <asp:Label runat="server" CssClass="TextParagraph" ID="lblApproveCATitle" Visible="true" Font-Bold="true"></asp:Label><br /> <br />                 
-           <asp:GridView ID="grdApproveCompletedAssess" runat="server" Visible="false" HeaderStyle-Font-Names="Arial" Font-Names="Arial" Font-Size="12px" AllowSorting="true" 
+           <asp:GridView ID="grdApproveCompletedAssess" runat="server" Visible="false" Font-Size="12px" AllowSorting="true" 
                 AutoGenerateColumns="False" EnableViewState="true" CellPadding="3" CellSpacing="1" AllowPaging="true" PageSize="50"
                 PagerSettings-Mode="Numeric" EmptyDataText=""  OnPageIndexChanging="grdApproveCompletedAssess_PageIndexChanging" 
                 OnRowDataBound="grdApproveCompletedAssess_RowDataBound" >
@@ -221,7 +221,7 @@
 
                 </Columns>
                 <PagerSettings PageButtonCount="20" />
-                <HeaderStyle BackColor="Green" ForeColor="White" Font-Names="Arial" />
+                <HeaderStyle BackColor="Green" ForeColor="White" />
 
             </asp:GridView>
              </asp:Panel></p>  </div><br />
@@ -252,7 +252,7 @@
              <p class="TextParagraph" style="text-align:left">
             <asp:Panel runat="server" HorizontalAlign="Left" ID="Panel3"><br />  
             <asp:Label runat="server" CssClass="TextParagraph" ID="lblIncompleteTitle" Visible="true" Font-Bold="true"></asp:Label><br /> <br />                 
-             <asp:GridView ID="grdResults" runat="server" Visible="false" HeaderStyle-Font-Names="Arial" Font-Names="Arial" Font-Size="12px" AllowSorting="true" 
+             <asp:GridView ID="grdResults" runat="server" Visible="false" Font-Size="12px" AllowSorting="true" 
                 AutoGenerateColumns="False" EnableViewState="true" CellPadding="3" CellSpacing="1" AllowPaging="true" PageSize="25"
                 PagerSettings-Mode="Numeric" EmptyDataText=""  OnPageIndexChanging="grdResults_PageIndexChanging" OnSorting="grdResults_Sorting" 
                 OnRowDataBound="grdResults_RowDataBound" OnRowCommand="grdResults_RowCommand" OnRowDeleting="grdResults_RowDeleting" >
@@ -312,7 +312,7 @@
                 </asp:TemplateField>
                 </Columns>
                 <PagerSettings PageButtonCount="20" />
-                <HeaderStyle BackColor="Green" ForeColor="White" Font-Names="Arial" />
+                <HeaderStyle BackColor="Green" ForeColor="White" />
 
             </asp:GridView>
              </asp:Panel></p>  </div><br />

@@ -428,11 +428,11 @@ namespace AArk
             DataTable dtResults = null;
             string strWrappedText = DataProxy.WrapSearchText(txtSpecies.Text.Trim());
 
-            int intCountryID = 0;
+            int? intCountryID = null;
 
             if (ddlCountries.SelectedValue != "")
                 intCountryID = Convert.ToInt32(ddlCountries.SelectedValue);
-
+            
             dtResults = DataProxy.GetSearchResults(intCountryID, strWrappedText);
 
             grdResults.DataSource = dtResults;

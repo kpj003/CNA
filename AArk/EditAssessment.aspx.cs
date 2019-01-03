@@ -311,7 +311,8 @@ namespace AArk
                 DataTable dtAssess = DataProxy.GetSpeciesInfo(intSpeciesID, intCountryID, intLanguageID);
              
                 DataRow dr = null;
-                string strRLURL = "http://www.iucnredlist.org/apps/redlist/details/";
+                //string strRLURL = "http://www.iucnredlist.org/apps/redlist/details/";
+                string strRLURL = "https://apiv3.iucnredlist.org/api/v3/taxonredirect/";
                 string strRLMap = "http://maps.iucnredlist.org/map.html?id=";
                 string strRLID = "";
                 if (dtAssess != null)

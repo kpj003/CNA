@@ -40,7 +40,7 @@ namespace AArk
             //Set global variables based on URL values.
             if (Request.QueryString["AssessmentID"] != null)
                 intAssessmentID = Convert.ToInt32(Request.QueryString["AssessmentID"]);
-            
+
             if (Request.QueryString["SpeciesID"] != null)
                 intSpeciesID = Convert.ToInt32(Request.QueryString["SpeciesID"]);
 
@@ -123,11 +123,11 @@ namespace AArk
 
                 imgAWeb.ImageUrl = strImageLink;
                 hlImage.HRef = strPhotoLink;
-                
+
                 lnkAWeb.NavigateUrl = strAWeb;
             }
             catch (Exception ex)
-            { 
+            {
                 //leave empty catch for now to prevent XML error
             }
         }
@@ -140,10 +140,10 @@ namespace AArk
                 int intLanguageID = DataProxy.GetLanguageID(strCurrentLanguage);
 
                 DataTable dtAssess = DataProxy.GetAssessmentQAGrid(intAssessmentID, intLanguageID);
-                
+
                 grdAssess.DataSource = dtAssess;
                 grdAssess.DataBind();
-            
+
             }
             catch (Exception ex)
             {
@@ -255,13 +255,15 @@ namespace AArk
 
                 DataTable dtAssess = DataProxy.GetAssessmentInfo(intAssessmentID, intLanguageID);
                 DataRow dr = null;
-                string strRLURL = "http://www.iucnredlist.org/apps/redlist/details/";
+                //string strRLURL = "http://www.iucnredlist.org/apps/redlist/details/";
+                string strRLURL = "https://apiv3.iucnredlist.org/api/v3/taxonredirect/";
+
                 string strRLMap = "http://maps.iucnredlist.org/map.html?id=";
                 string strRLID = "";
                 if (dtAssess != null)
-                { 
+                {
                     if (dtAssess.Rows.Count > 0)
-                    {   
+                    {
                         //Set page control values based on returned values in dataset.
                         dr = dtAssess.Rows[0];
                         string strCommonName = "";
@@ -276,7 +278,7 @@ namespace AArk
                         strRLMap += strRLID;
 
                         lblAdditionalCommentsValue.Text = DataProxy.GetAdditionalComments(intAssessmentID);
-      
+
                         if (strCommonName != "")
                             lblSpeciesDisplayName.Text = dr["SpeciesDisplayName"].ToString() + ",";
 
@@ -286,7 +288,7 @@ namespace AArk
                         if (dr["Completed"] != null)
                         {
                             if (dr["Completed"].ToString().ToUpper() == "TRUE")
-                               lblAssessmentStatusValue.Text = DataProxy.LoadString("COMPLETEDLABEL",strCurrentLanguage);
+                                lblAssessmentStatusValue.Text = DataProxy.LoadString("COMPLETEDLABEL", strCurrentLanguage);
                             else
                                 lblAssessmentStatusValue.Text = DataProxy.LoadString("INCOMPLETELABEL", strCurrentLanguage);
                         }
@@ -330,7 +332,7 @@ namespace AArk
                 lblError.Text = ex.Message;
             }
         }
-  
+
 
         public override void VerifyRenderingInServerForm(Control control)
         {
@@ -361,7 +363,7 @@ namespace AArk
                 //Response.Write(stringWrite.ToString());
                 //Response.End(); 
                 //***END GRID-ONLY CODE
-               
+
             }
             catch (Exception ex)
             {
@@ -377,7 +379,7 @@ namespace AArk
             strURL += strSpeciesName;
 
             //Response.Write(String.Format("window.open('{0}','_blank')", ResolveUrl(strURL)));
-           
+
             ClientScript.RegisterStartupScript(this.GetType(), "OpenWin", "<script>openNewWin('" + strURL + "')</script>");
         }
 

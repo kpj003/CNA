@@ -22,6 +22,22 @@ namespace AArk
 
         }
 
+        protected void Application_BeginRequest(Object sender, EventArgs e)
+        {
+            // force https redirect
+            switch (Request.Url.Scheme)
+            {
+                case "https":
+                    Response.AddHeader("Strict-Transport-Security", "max-age=300");
+                    break;
+                case "http":
+                    var path = "https://" + Request.Url.Host + Request.Url.PathAndQuery;
+                    Response.Status = "301 Moved Permanently";
+                    Response.AddHeader("Location", path);
+                    break;
+            }
+        }
+
         void Application_Error(object sender, EventArgs e)
         {
             // Code that runs when an unhandled error occurs

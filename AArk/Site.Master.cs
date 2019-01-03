@@ -18,6 +18,19 @@ namespace AArk
     {
         string strCurrentLanguage = "";
 
+        protected void Page_Init(object sender, EventArgs e)
+        {
+            //var scheme = this.Request.Url.Scheme;
+            //if(scheme == "http")
+            //{
+            //    //var uri = this.Request.Url;
+            //    UriBuilder uri = new UriBuilder();
+            //    uri.Scheme = "https";
+            //    //uri.
+            //}
+        }
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
 

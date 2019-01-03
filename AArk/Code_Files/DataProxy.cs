@@ -735,54 +735,82 @@ namespace Data.Utilities {
 
         }
 
-        public static DataTable GetSearchResults(int intCountryID, string strSpeciesSearch)
+        public static DataTable GetSearchResults(int? countryId, string strSpeciesSearch)
         {
             DataTable dt = null;
-            string strCheck =  " SELECT DISTINCT CASE " +
-                                " WHEN SC.OriginID = 1 THEN CountryName + ' (Introduced)' " +
-                                " ELSE CountryName END AS CountryName, dbo.GetSpeciesDisplayName(S.SpeciesID) AS SpeciesDisplayName, S.SpeciesID, " +
-                                " A.AssessmentID, A.DateCreated, U.UserID, dbo.GetUserFullName(A.UserID) as UserName, " +
-                                "dbo.GetNumberAssessmentsSpecies(S.SpeciesID, C.CountryID) AS TotalAssessments, " +
-                                " C.CountryID, EnglishCommonName,LocalCommonName, U.UserID, dbo.GetUserFullName(U.UserID) as UserName " +
-                                " FROM Assessments A INNER JOIN Countries C ON A.CountryID = C.CountryID " +
-                                " INNER JOIN Species S ON S.SpeciesID = A.SpeciesID  " +
-                                " INNER JOIN Users U ON U.UserID = A.UserID " +
-                                " INNER JOIN SpeciesCountries SC ON (SC.CountryID = A.CountryID and SC.SpeciesID = A.SpeciesID) " +
-                                " WHERE (ScientificName LIKE @SpeciesSearchValue " +
-                                " OR GenusName LIKE @SpeciesSearchValue " +
-                                " OR SpeciesName LIKE @SpeciesSearchValue " +
-                                " OR ScientificName LIKE @SpeciesSearchValue " +
-                                " OR SubSpeciesName LIKE @SpeciesSearchValue " +
-                                " OR LocalCommonName LIKE @SpeciesSearchValue " +
-                                " OR Synonyms LIKE @SpeciesSearchValue " + //Add new field Synonyms to search criteria
-                                " OR EnglishCommonName LIKE @SpeciesSearchValue) " +
-                                " AND A.Approved = 1 " +
-                                " ORDER BY SpeciesDisplayName, CountryName, DATECREATED DESC ";
+            string strCheck = @" 
+                SELECT DISTINCT CASE 
+                WHEN SC.OriginID = 1 THEN CountryName + ' (Introduced)'  ELSE CountryName END AS CountryName,
+                    dbo.GetSpeciesDisplayName(S.SpeciesID) AS SpeciesDisplayName, 
+                    S.SpeciesID,
+                    A.AssessmentID, 
+                    A.DateCreated, 
+                    U.UserID, 
+                    (isnull(U.FirstName,'') + ' ' + isnull(U.LastName,'')) as UserName, 
+                    dbo.GetNumberAssessmentsSpecies(S.SpeciesID, C.CountryID) AS TotalAssessments, 
+                    C.CountryID, 
+                    EnglishCommonName,
+                    LocalCommonName
+                    FROM Assessments A INNER JOIN Countries C ON A.CountryID = C.CountryID 
+                    INNER JOIN Species S ON S.SpeciesID = A.SpeciesID 
+                    INNER JOIN Users U ON U.UserID = A.UserID 
+                    INNER JOIN SpeciesCountries SC ON (SC.CountryID = A.CountryID and SC.SpeciesID = A.SpeciesID) 
+                    WHERE (ScientificName LIKE @SpeciesSearchValue  
+                    OR GenusName LIKE @SpeciesSearchValue 
+                    OR SpeciesName LIKE @SpeciesSearchValue 
+                    OR ScientificName LIKE @SpeciesSearchValue
+                    OR SubSpeciesName LIKE @SpeciesSearchValue
+                    OR LocalCommonName LIKE @SpeciesSearchValue 
+                    OR EnglishCommonName LIKE @SpeciesSearchValue) 
+                    AND A.Approved = 1 
+	                and (@CountryId is null or C.CountryID = @CountryId)
+                    ORDER BY SpeciesDisplayName, CountryName, DATECREATED DESC  ";
 
-            if (strSpeciesSearch == "&&")
-                //No species name limit selected - remove 'like' search to increase speed returning dataset.
-                strCheck = " SELECT DISTINCT CASE " +
-                                " WHEN SC.OriginID = 1 THEN CountryName + ' (Introduced)' " +
-                                " ELSE CountryName END AS CountryName, dbo.GetSpeciesDisplayName(S.SpeciesID) AS SpeciesDisplayName, S.SpeciesID, " +
-                                " A.AssessmentID, A.DateCreated, U.UserID, dbo.GetUserFullName(A.UserID) as UserName, " +
-                                " C.CountryID, EnglishCommonName,LocalCommonName, U.UserID, dbo.GetUserFullName(U.UserID) as UserName " +
-                                " FROM Assessments A INNER JOIN Countries C ON A.CountryID = C.CountryID " +
-                                " INNER JOIN Species S ON S.SpeciesID = A.SpeciesID  " +
-                                " INNER JOIN Users U ON U.UserID = A.UserID " +
-                                " INNER JOIN SpeciesCountries SC ON (SC.CountryID = A.CountryID and SC.SpeciesID = A.SpeciesID) " +
-                                " WHERE A.Approved = 1 " +
-                                " ORDER BY SpeciesDisplayName, CountryName, DATECREATED DESC ";
+            //and (@countryId is null or C.CountryID = @CountryId)
+            //" OR Synonyms LIKE @SpeciesSearchValue " + //Add new field Synonyms to search criteria ??
 
-            dt = GetDataTable(strCheck, false,
-                                CreateSqlParameter("@SpeciesSearchValue", strSpeciesSearch, SqlDbType.VarChar));
-
-            if (dt != null)
+            if (strSpeciesSearch == "%%")
             {
-                string strCountryFilter = "CountryID = " + intCountryID.ToString();
+                strCheck = @"
+                    SELECT DISTINCT CASE 
+                     WHEN SC.OriginID = 1 THEN CountryName + ' (Introduced)' ELSE CountryName END AS CountryName, 
+                      dbo.GetSpeciesDisplayName(S.SpeciesID) AS SpeciesDisplayName, 
+                      dbo.GetNumberAssessmentsSpecies(S.SpeciesID, C.CountryID) AS TotalAssessments,
+                      S.SpeciesID, 
+                      A.AssessmentID, 
+                      A.DateCreated, 
+                      U.UserID, 
+                      (isnull(U.FirstName,'') + ' ' + isnull(U.LastName,'')) as UserName,  
+                      C.CountryID, 
+                      EnglishCommonName, 
+                      LocalCommonName	
+                      FROM Assessments A 
+	                    INNER JOIN Countries C ON A.CountryID = C.CountryID 
+                        INNER JOIN Species S ON S.SpeciesID = A.SpeciesID 
+                        INNER JOIN Users U ON U.UserID = A.UserID 
+                        INNER JOIN SpeciesCountries SC ON (SC.CountryID = A.CountryID and SC.SpeciesID = A.SpeciesID) 
+                        WHERE A.Approved = 1 
+	                      and (@CountryId is null or C.CountryID = @CountryId)
+                        ORDER BY SpeciesDisplayName, CountryName, DATECREATED DESC;
 
-                if (intCountryID > 0)
-                    dt = GetFilteredDataTable(dt, strCountryFilter);
+                    ";
             }
+
+            object cId = DBNull.Value;
+            if(countryId.HasValue)
+            {
+                cId = countryId.Value;
+            }
+
+            dt = GetDataTable(strCheck, false, CreateSqlParameter("@SpeciesSearchValue", strSpeciesSearch, SqlDbType.VarChar), CreateSqlParameter("@CountryId", cId, SqlDbType.Int));
+
+            //if (dt != null)
+            //{
+            //    string strCountryFilter = "CountryID = " + intCountryID.ToString();
+
+            //    if (intCountryID > 0)
+            //        dt = GetFilteredDataTable(dt, strCountryFilter);
+            //}
 
             return dt;
         }

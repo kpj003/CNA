@@ -28,7 +28,7 @@
              <p class="TextParagraph" style="text-align:left">
                 <asp:Panel runat="server" HorizontalAlign="Left" ID="Panel1"><br />  
                 <asp:Label runat="server" CssClass="TextParagraph" ID="lblReportTitle" Visible="false" Font-Bold="true"></asp:Label><br /> <br />                 
-          <asp:GridView ID="grdAssessUser" runat="server" Visible="false" HeaderStyle-Font-Names="Arial" Font-Names="Arial" Font-Size="12px"  
+          <asp:GridView ID="grdAssessUser" runat="server" Visible="false" Font-Size="12px"  
                 AutoGenerateColumns="False" EnableViewState="true" CellPadding="3" CellSpacing="1" AllowPaging="true" PageSize="50"
                 PagerSettings-Mode="Numeric" EmptyDataText=""  OnPageIndexChanging="grdAssessUser_PageIndexChanging"  
                 OnRowDataBound="grdAssessUser_RowDataBound">
@@ -74,7 +74,7 @@
                     </asp:TemplateField>
                  </Columns>
                 <PagerSettings PageButtonCount="25" />
-                <HeaderStyle BackColor="Green" ForeColor="White" Font-Names="Arial" />
+                <HeaderStyle BackColor="Green" ForeColor="White" />
 
             </asp:GridView>
              </asp:Panel></p>  </div>

@@ -111,7 +111,7 @@
   
         <br />
         </td>  
-        <td style="text-align:center;font-family:Arial; vertical-align:top; width:35%">
+        <td style="text-align:center; vertical-align:top; width:35%">
                 <br />    
                     <a id="hlImage" runat="server" target="_blank">
                     <asp:Image ID="imgAWeb" runat="server" /></a>    
