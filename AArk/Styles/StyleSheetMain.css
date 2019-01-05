@@ -5,20 +5,7 @@ body {
     background: #999;
 }
 
-.main-container {
-    width: 1010px;
-    box-shadow: 0px 0px 78px 3px rgba(0,0,0,0.7);
-    background: #FFF;
-    /*width: 980px;*/
-}
 
-.footer-links {
-    margin: 10px 0;
-}
-
-.page-header {
-    font-size: 1.5em;
-}
 
 input[type=submit], input[type=button] {
     cursor: pointer;
@@ -41,18 +28,46 @@ input[type=submit], input[type=button] {
 }
 
 
+select {
+    font-size: 0.75em;
+}
+
+label {
+    font-size: 0.9em;
+}
+
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    margin-right: 3px;
+}
+
+.main-container {
+    width: 1010px;
+    box-shadow: 0px 0px 78px 3px rgba(0,0,0,0.7);
+    background: #FFF;
+    /*width: 980px;*/
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.page-header {
+    font-size: 1.5em;
+}
 
 
+.create-ass-sections .Initial, .create-ass-sections .Clicked {
+    font-size: 0.7em;
+    white-space: normal;
+}
 
 
-
-
-
-.WorkTable 
-{
-	border:1;
-	height:600px;
-	width: 980px;
+.WorkTable {
+    border: 1;
+    height: 600px;
+    width: 980px;
 }
 .Initial
   {

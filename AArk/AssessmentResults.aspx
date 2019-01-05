@@ -67,13 +67,13 @@
                         <asp:ImageMap Height="101" Width="196" runat="server" ID="imgRLMap" /></a>
                     <asp:ImageMap Height="101" Width="196" Visible="false" runat="server" ID="imgRLMapOnly" /><br />
                     <br />
-                    <asp:HyperLink CssClass="LinksText" runat="server" Target="_blank" ID="lnkRedList" ></asp:HyperLink>
+                    <asp:HyperLink CssClass="LinksText" runat="server" Target="_blank" ID="lnkRedList"></asp:HyperLink>
                 </p>
             </td>
         </tr>
     </table>
 
-    <asp:Panel CssClass="TextText" runat="server" HorizontalAlign="Left" ID="Panel1">
+    <asp:Panel runat="server" HorizontalAlign="Left" ID="Panel1">
         <br />
         <p style="font-size: small">
             <asp:Label runat="server" CssClass="TextHeader" ID="lblReportTitle" Font-Italic="true" Visible="true" Font-Bold="true"></asp:Label><br />
