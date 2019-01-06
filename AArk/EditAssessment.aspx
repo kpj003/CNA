@@ -187,7 +187,7 @@
     </table>
 
     <table style="width: 980px; border-width: 1" cellpadding="1" cellspacing="0">
-        <tr style="white-space: normal">
+        <tr style="white-space: normal" class="create-ass-sections" >
             <td rowspan="2" style="text-align: center; text-wrap: normal">
                 <asp:Button Height="40px" BorderStyle="None" OnClientClick="submitFormOkay = true;" Width="159" ID="Section1" CssClass="wrap" runat="server" OnClick="Section1_Click" /></td>
             <td rowspan="2" style="text-align: center; text-wrap: normal">
